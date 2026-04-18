@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Newsreader (Headline), Inter (Body), Space Grotesk (Label) -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-secondary-container": "#646464",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "tertiary-container": "#1b1c1c",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-variant": "#e2e2e2",
+                        "inverse-on-surface": "#f1f1f1",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#e3e2e2",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-primary-fixed": "#1b1b1b",
+                        "outline": "#7e7576",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "background": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-primary-container": "#848484",
+                        "primary-container": "#1b1b1b",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#e4e2e2",
+                        "surface-dim": "#dadada",
+                        "primary": "#000000",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "primary-fixed": "#e2e2e2",
+                        "inverse-primary": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "on-surface": "#1a1c1c",
+                        "on-surface-variant": "#4c4546",
+                        "surface-container": "#eeeeee",
+                        "surface-container-low": "#f3f3f3",
+                        "on-secondary-fixed-variant": "#474747",
+                        "tertiary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#e4e2e2",
+                        "secondary": "#5e5e5e",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-container": "#848484",
+                        "on-error": "#ffffff",
+                        "surface": "#f9f9f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Space Grotesk", "monospace"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #f9f9f9;
+        }
+    </style>
+<title>Galería de Arte Mexicano | Artists</title></head>
+<body class="font-body text-on-background selection:bg-primary-fixed selection:text-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 h-24 bg-[#f9f9f9]/80 backdrop-blur-xl dark:bg-black/80">
+<div class="flex justify-between items-center px-12 md:px-24 w-full h-full">
+<div class="font-serif text-2xl font-light tracking-[0.2em] text-black dark:text-white" style=""><img alt="On Gallery Logo" class="h-10 w-auto object-contain block dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0ugbdxNY6PgURRkK8sujuhfJ9nkqh1WeduXBFhFH6q7PD979oV6SemNBvQ-8xABO7vnIFKINhZfaQTtZO6c39u-CqYAm082aAMqgAHXSrpkMF_ypTvcfyURpozP-Af9wM_AiRJA4YeZTepM-MWOepabRKvyjVfCqWvdmiosrrGxDQlaRaqqCEJQDWioOUeDzksb38dHUU23xa3UFr6DtwQJDsTvIAPmbj-3ajtFl4816_O6wlqlDE-eudmba56rHlIQ4H6V-YFIZ"/></div>
+<nav class="hidden md:flex gap-12 items-center">
+<a class="font-sans uppercase tracking-widest text-xs hover:text-black transition-all duration-500 text-neutral-400" href="index.html" style="">Home</a>
+<a class="text-black border-b border-black pb-1 font-serif tracking-tight text-lg" href="artists.html" style="">Artists</a>
+<a class="font-sans uppercase tracking-widest text-xs hover:text-black transition-all duration-500 text-neutral-400" href="shop.html" style="">Shop</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="scale-100 active:scale-95 transition-transform" style="">
+<span class="material-symbols-outlined text-black" data-icon="shopping_bag" style="">shopping_bag</span>
+</button>
+<button class="scale-100 active:scale-95 transition-transform" style="">
+<span class="material-symbols-outlined text-black" data-icon="menu" style="">menu</span>
+</button>
+</div>
+</div>
+<div class="bg-[#e8e8e8] dark:bg-neutral-900 h-[1px]"></div>
+</header>
+<main class="pt-40 pb-20">
+<!-- Page Header & Filter Section -->
+<section class="px-12 md:px-24 mb-24">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-12">
+<div class="max-w-2xl">
+<h1 class="font-headline text-6xl md:text-8xl font-light tracking-tight text-primary leading-none" style="">The Curated Directory</h1>
+<p class="mt-8 font-body text-lg text-secondary max-w-lg" style="">An archival collection of contemporary and traditional Mexican artists bridging heritage and modernity.</p>
+</div>
+<div class="w-full md:w-auto">
+<div class="relative group">
+<input class="w-full md:w-80 bg-transparent border-t-0 border-x-0 border-b border-outline focus:ring-0 focus:border-primary placeholder:font-label placeholder:text-xs placeholder:tracking-[0.2em] py-3 transition-colors" placeholder="SEARCH ARTISTS" type="text"/>
+<span class="material-symbols-outlined absolute right-0 top-3 text-outline group-focus-within:text-primary" data-icon="search" style="">search</span>
+</div>
+</div>
+</div>
+<!-- Chips / Filters -->
+<div class="mt-16 flex flex-wrap gap-3">
+<button class="px-6 py-2 bg-primary text-on-primary font-label text-[10px] uppercase tracking-widest transition-all" style="">All Collections</button>
+<button class="px-6 py-2 bg-surface-container-highest text-primary font-label text-[10px] uppercase tracking-widest hover:bg-surface-container-high transition-all" style="">Contemporary</button>
+<button class="px-6 py-2 bg-surface-container-highest text-primary font-label text-[10px] uppercase tracking-widest hover:bg-surface-container-high transition-all" style="">Folk Art</button>
+<button class="px-6 py-2 bg-surface-container-highest text-primary font-label text-[10px] uppercase tracking-widest hover:bg-surface-container-high transition-all" style="">Sculpture</button>
+<button class="px-6 py-2 bg-surface-container-highest text-primary font-label text-[10px] uppercase tracking-widest hover:bg-surface-container-high transition-all" style="">Textiles</button>
+<button class="px-6 py-2 bg-surface-container-highest text-primary font-label text-[10px] uppercase tracking-widest hover:bg-surface-container-high transition-all" style="">Photography</button>
+</div>
+</section>
+<!-- Artists Grid -->
+<section class="px-12 md:px-24">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-24 gap-x-12">
+<!-- Artist Card 1: Large Featured -->
+<article class="lg:col-span-2 group">
+<div class="relative aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale-[40%] group-hover:grayscale-0 transition-all duration-700" data-alt="Modern abstract painting with vibrant Mexican pink and earth tones, sharp geometric shapes on a neutral canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEuFMeyBxdI3POHhwiUE6ltFePcOewMvNf_cr30kj655CMN_xzy1Mj29rNNLrHuLJgqXdPCPYPnAndwdqElUz3avTa_m1C3OdinK0pAnMQjETrgTf1bO9pZpRF67ceybq-U9e3VrHFjqL-hwisjx7VghaaycqPFvW3JOPsrhjwrLhAeFZJmQ9Jg07w4C7_uzAzeOj7Zyi3sGFcRPuzr7oL1pyg0UKjOwVi7N1sjPyXVp40KYGZob-4LT6-RbkpPvfqYf5qh88lRCA" style=""/>
+<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="mt-8 flex justify-between items-start">
+<div>
+<span class="font-label text-[10px] tracking-[0.2em] text-outline uppercase block mb-2" style="">Contemporary Painter</span>
+<h2 class="font-headline text-4xl font-light text-primary group-hover:italic transition-all" style="">Elena Rodríguez-López</h2>
+</div>
+<span class="font-label text-[10px] tracking-[0.2em] text-secondary uppercase" style="">CDMX, MX</span>
+</div>
+<p class="mt-4 font-body text-sm text-secondary leading-relaxed max-w-xl" style="">Exploring the intersection of pre-Hispanic symbolism and digital brutalism through large-scale oil on canvas.</p>
+</article>
+<!-- Artist Card 2 -->
+<article class="group">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Artisan portrait in a sunlit studio, focused expression, traditional textiles in the background with soft bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCghyd5jlNAKvgEnM1Ngl4oW7pr6v9LoKC87szEVxgtoQ4CPk-TZr9wNMExnMHHpChDH5uxzgiO4NHIT_I1c5i_29smDFOGhKTk4TFx1QEFlk5Ody-T_NmjHCkF4daikfFKJbVeFDRf4kMqE_i1PSIjqQ-0ta2Gzw4qilU14YkvRmlWAhZ9c8dr15LKy7fiHGDqpGh2CKmqLDT38cjAmW4g_girM-zwsyHgCsNIRgGaPQmOiWHr79yzfG_WUNv6pNpHXOIopsR7j3w" style=""/>
+</div>
+<div class="mt-8">
+<span class="font-label text-[10px] tracking-[0.2em] text-outline uppercase block mb-2" style="">Master Sculpture</span>
+<h2 class="font-headline text-3xl font-light text-primary group-hover:italic transition-all" style="">Mateo Silva</h2>
+<p class="mt-4 font-body text-sm text-secondary leading-relaxed" style="">Redefining basalt stone carvings with minimalist architectural silhouettes.</p>
+</div>
+</article>
+<!-- Artist Card 3 -->
+<article class="group">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close up of a contemporary sculpture made of red clay and polished obsidian, minimal lines, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqKFRPiwY3qcUvB8HX9HlfRi9ZDQsb1fROZmKfzE0UVBC_UIxDipdGpdBU5J1LPIuIZew1yxou9ocZkQfoqY-Fp2CU75wdZrbCLf-YHko4tmrrPL95B4_ih64io_2hAxGazCbUvyoBjff2wIeX5lx6-7Zf71TiSyz4ciQlvK64ty0PlVN3NgM8VDPVz0WsZclHrLdf5iWVERmfMEZP1cee7oJuhNiiU4k0c29hZRXPoG-tiKK_xt1JKK36bsNZAR2yXuaN9yWn3Qw" style=""/>
+</div>
+<div class="mt-8">
+<span class="font-label text-[10px] tracking-[0.2em] text-outline uppercase block mb-2" style="">Ceramic Artist</span>
+<h2 class="font-headline text-3xl font-light text-primary group-hover:italic transition-all" style="">Clara Montes</h2>
+<p class="mt-4 font-body text-sm text-secondary leading-relaxed" style="">Sustainable clay works inspired by the volcanic landscapes of Oaxaca.</p>
+</div>
+</article>
+<!-- Artist Card 4 -->
+<article class="group">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Textured mixed media artwork with neutral palette, subtle gold leaf accents, abstract composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNtdaoXorufoM8KsSwoFEnzr378TH33km6k09VfqTQ2oYdCYrxn9ntJYCZTZMWA2dlV-BTme9hjPUz8NCsAxOD-d6HnBU421QVtq_zM5YefT8rqMkN9_QtqwYqM8o2o3Sw0LmwD3rlHRJl4gAUBgLglME30O_i8J2B5d6h_Oc7L_TGZq1Tb8K1evDe0h3yuySDHfjae3emHn5H7beTKc64Y0r_XNrKGD_Lrsej92LEC5RFOqQr7EZkazOfkWqniuf4E-UaHR5AkK4" style=""/>
+</div>
+<div class="mt-8">
+<span class="font-label text-[10px] tracking-[0.2em] text-outline uppercase block mb-2" style="">Textile Designer</span>
+<h2 class="font-headline text-3xl font-light text-primary group-hover:italic transition-all" style="">Alejandro Cruz</h2>
+<p class="mt-4 font-body text-sm text-secondary leading-relaxed" style="">Woven narratives of Zapotec heritage using hand-dyed organic wool.</p>
+</div>
+</article>
+<!-- Artist Card 5 -->
+<article class="group">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Dramatic black and white photograph of Mexican architecture, sharp shadows, high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ32pS8SVAzxHKWd2dTAzlBAzMg6jCHb5SCUN12gugRmXHtlvycMyMVZev_NSDDNNeWHEs8ItqPt5gAn97QVq0W6zH8ZGW4L4BnMRMQQYEc7UF6xMhWopkwodzJqHydoyUsJb57c70sW35jO4xqSq4GRlOoBmuOIdfHO0vejAT-_cMZwIXtstH-vIzh3PFB0Q4LFWigy1dkh6lpqeQ8Yhl-_DM6CLlTpptxVu7w7_5LuxxV94DZvvGF3ZQeVGO9fvV00wHpVreMbk" style=""/>
+</div>
+<div class="mt-8">
+<span class="font-label text-[10px] tracking-[0.2em] text-outline uppercase block mb-2" style="">Photographer</span>
+<h2 class="font-headline text-3xl font-light text-primary group-hover:italic transition-all" style="">Sofia Vargas</h2>
+<p class="mt-4 font-body text-sm text-secondary leading-relaxed" style="">Capturing the silent dialogue between light and brutalist structures in Mexico.</p>
+</div>
+</article>
+</div>
+<!-- Pagination/Footer Actions -->
+<div class="mt-40 border-t border-outline/20 pt-12 flex justify-between items-center">
+<div class="font-label text-[10px] tracking-[0.2em] text-outline uppercase" style="">Displaying 05 — 24 Artists</div>
+<button class="flex items-center gap-4 group" style="">
+<span class="font-label text-[10px] tracking-[0.2em] text-primary uppercase border-b border-primary pb-1 group-hover:italic transition-all" style="">Load Archive</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform" data-icon="arrow_forward" style="">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 md:px-24 mt-40 bg-[#f3f3f3] dark:bg-neutral-950">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 w-full border-t border-black/5 dark:border-white/5 pt-12">
+<div class="max-w-xs">
+<div class="font-serif italic text-xl dark:text-white mb-6" style="">THE DIGITAL CURATOR</div>
+<p class="font-mono text-[10px] uppercase tracking-[0.15em] dark:text-neutral-400 leading-relaxed text-neutral-500" style="">
+                    A digital space dedicated to the preservation and promotion of Mexican artistic heritage in the global landscape.
+                </p>
+</div>
+<div class="flex flex-col items-end gap-4">
+<div class="flex gap-8">
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Privacy</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Press</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Inquiries</a>
+</div>
+<div class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-400" style="">
+                    © 2024 THE DIGITAL CURATOR. ARCHIVING MEXICAN HERITAGE.
+                </div>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script></body></html>

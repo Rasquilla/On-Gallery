@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-secondary-container": "#646464",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "tertiary-container": "#1b1c1c",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-variant": "#e2e2e2",
+                        "inverse-on-surface": "#f1f1f1",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#e3e2e2",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-primary-fixed": "#1b1b1b",
+                        "outline": "#7e7576",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "background": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-primary-container": "#848484",
+                        "primary-container": "#1b1b1b",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#e4e2e2",
+                        "surface-dim": "#dadada",
+                        "primary": "#000000",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "primary-fixed": "#e2e2e2",
+                        "inverse-primary": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "on-surface": "#1a1c1c",
+                        "on-surface-variant": "#4c4546",
+                        "surface-container": "#eeeeee",
+                        "surface-container-low": "#f3f3f3",
+                        "on-secondary-fixed-variant": "#474747",
+                        "tertiary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#e4e2e2",
+                        "secondary": "#5e5e5e",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-container": "#848484",
+                        "on-error": "#ffffff",
+                        "surface": "#f9f9f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Space Grotesk", "monospace"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+        }
+    </style>
+<title>Galería de Arte Mexicano | Home</title></head>
+<body class="font-body text-on-surface selection:bg-primary selection:text-white">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 h-24 bg-[#f9f9f9]/80 backdrop-blur-xl dark:bg-black/80">
+<div class="flex justify-between items-center px-12 md:px-24 w-full h-full">
+<div class="flex items-center gap-12">
+<a class="font-serif text-2xl font-light tracking-[0.2em] text-black dark:text-white" href="#"><img alt="On Gallery Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugbdxNY6PgURRkK8sujuhfJ9nkqh1WeduXBFhFH6q7PD979oV6SemNBvQ-8xABO7vnIFKINhZfaQTtZO6c39u-CqYAm082aAMqgAHXSrpkMF_ypTvcfyURpozP-Af9wM_AiRJA4YeZTepM-MWOepabRKvyjVfCqWvdmiosrrGxDQlaRaqqCEJQDWioOUeDzksb38dHUU23xa3UFr6DtwQJDsTvIAPmbj-3ajtFl4816_O6wlqlDE-eudmba56rHlIQ4H6V-YFIZ"/></a>
+<div class="hidden md:flex gap-8">
+<a class="text-black dark:text-white border-b border-black dark:border-white pb-1 font-sans uppercase tracking-widest text-xs transition-all duration-500" href="index.html" style="">Home</a>
+<a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="artists.html" style="">Artists</a>
+<a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="shop.html" style="">Shop</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform" data-icon="shopping_bag" style="">shopping_bag</span>
+<span class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform" data-icon="menu" style="">menu</span>
+</div>
+</div>
+<div class="bg-[#e8e8e8] dark:bg-neutral-900 h-[1px]"></div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-12 md:px-24 pt-16 pb-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-8 order-2 md:order-1">
+<div class="relative aspect-[4/5] md:aspect-[16/9] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" data-alt="large scale contemporary mexican abstract painting with vibrant earthy tones and bold textured brushstrokes in a minimalist white gallery setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjxpvEYwlPYhwe3FuYnKvAl5YxCEMre65zAuuMIhCk-haSeLBsG5_3jQOsmr6U9o5J2Sp3UszHVmLx64B6cOTWNijquSBSIGILUVQ5PPnj3HE2t-qJo_X3f6bYEIqRz6rw9P1l8TLDyHVtIeXACQcDIhDQspbOJLE0JnYs6A_vsbmcyfc2TasfRhr3DOObXoyfQ3UgkAJEwZTx8eGjxK3X27u8gIm-AjQdrf5Z_cNEP37FVBMrE1VJ1ISJSByhwwfA9G8Q49znW1w" style=""/>
+</div>
+</div>
+<div class="md:col-span-4 order-1 md:order-2 pb-12">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block" style="">Current Exhibition</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extralight tracking-tighter leading-none mb-8" style="">Raíces Modernas</h1>
+<p class="font-body text-lg text-secondary leading-relaxed mb-12 max-w-sm" style="">
+                        A definitive dialogue between ancestral Mexican heritage and the starkness of digital brutalism. Curated for the modern collector.
+                    </p>
+<button class="bg-primary text-white px-10 py-5 font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-colors" data-link="shop.html" style="" type="button">
+                        Explore Exhibition
+                    </button>
+</div>
+</div>
+</section>
+<!-- Curated Collections (Bento Grid) -->
+<section class="bg-surface-container-low py-40 px-12 md:px-24">
+<div class="mb-24 flex flex-col md:flex-row justify-between items-baseline gap-4">
+<h2 class="font-headline text-5xl tracking-tight" style="">Curated Collections</h2>
+<a class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-colors" href="artists.html" style="">View All Series</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Large Feature -->
+<div class="md:col-span-2 group cursor-pointer">
+<div class="overflow-hidden bg-surface mb-6">
+<img class="w-full aspect-[16/9] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="minimalist architectural photography of a contemporary mexican art museum with sharp shadows and concrete textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5nmvxdm5T2nSDuobTTld5EtMSYcx-D7uSJxCxTOChf4R3ufGg_mfKzAeDLFo_f5nf8NiDg2RCVFh_arwu-lr4si_AsdbspLPQWvMifQb0hyegFC15bbiEMm16RPBlb4i2z9HDwSvv8BUNKDWrGGSeGjo67PowdS_MIKPHXJ0w3TyCuoy6gADyE0Ys_0EAWBumOwBkM8MCk2bzxonWDv3uoFJFGCCWnqWdqewEJXxZCXbHOi2rftwllzWOuzDZ3c9w_0Syp7p7PtQ" style=""/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-3xl mb-2" style="">The Brutalist Series</h3>
+<p class="font-label text-xs uppercase tracking-widest text-outline" style="">12 Selected Works</p>
+</div>
+<span class="material-symbols-outlined text-2xl" data-icon="north_east" style="">north_east</span>
+</div>
+</div>
+<!-- Secondary Feature -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden bg-surface mb-6">
+<img class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="close up of handcrafted mexican ceramic sculpture with organic shapes and matte black finish on a white pedestal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHe-bSvJLD_IoaRJm4D7WqHtQUqOXrog1o2lDDPW2tfqVgpHmVEBSTh9qnuUTG-U3Gi0QXo2COnygzxUY--MBZ3gR2NLeEllRp_U3xip8wz6TZzUztbWGD6OkOGArNmg_RiAMmIRLY-_EmviHDbCC33MeFtWJv33sRBYe7GXrxqNBlCwpwawvNI0N64LRGla4OKH6QBwfnjAAug7qZX_eq_h-VyxYAlNzP1-vu-aBU9QXb3VTSncJapSsLEv6WXw1XXtj7AX5qcsw" style=""/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-3xl mb-2" style="">Form &amp; Earth</h3>
+<p class="font-label text-xs uppercase tracking-widest text-outline" style="">8 Selected Works</p>
+</div>
+<span class="material-symbols-outlined text-2xl" data-icon="north_east" style="">north_east</span>
+</div>
+</div>
+<!-- Bottom Row -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden bg-surface mb-6">
+<img class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="abstract expressionist painting using only black ink on large white canvas with fluid motion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDayuFhkp9TO9XlTe5dtOgxykVEA6pWEjENamn_x5uY18JAkaKgp_i_NuOi6dScVNG-jAhXQANFXvw2cw9VLOdgofuNqeYQXy3zACHTOnCwzT1UNNciku_weUBCexYftsg6_Fz22g_vmbgIdy_cKDWuzOK5tgIlrfV3ZbQCpFZsCfPBwY5VK7rx8egqFs27kqJkl6eyw-gxE_RHQYeUdnIf5vpr-YPz-E96qSlTq4IenXIx4Q9HHu0agcwDX__9giJXYk0IZemDr3M" style=""/>
+</div>
+<h3 class="font-headline text-3xl mb-2" style="">Monochrome Echoes</h3>
+<p class="font-label text-xs uppercase tracking-widest text-outline" style="">Digital Monotypes</p>
+</div>
+<div class="md:col-span-2 bg-primary flex flex-col justify-center p-12 md:p-24 text-white">
+<h3 class="font-headline text-4xl mb-8 max-w-md" style="">Private Acquisitions &amp; Consultancy</h3>
+<p class="font-body text-neutral-400 mb-12 max-w-sm" style="">We provide tailored curation services for private residences and corporate spaces globally.</p>
+<button class="w-fit border border-white/20 px-8 py-4 font-label text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all" data-link="mailto:hola@tudominio.com?subject=Consulta%20sobre%20la%20galer%C3%ADa" style="" type="button">Request Inquiry</button>
+</div>
+</div>
+</section>
+<!-- New Arrivals (Editorial Layout) -->
+<section class="py-40 px-12 md:px-24">
+<div class="flex items-center gap-4 mb-24">
+<div class="h-[1px] w-12 bg-primary"></div>
+<h2 class="font-label text-xs uppercase tracking-[0.4em]" style="">New Arrivals</h2>
+</div>
+<div class="space-y-48">
+<!-- Item 1 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<div class="relative overflow-hidden">
+<img class="w-full aspect-[4/3] object-cover" data-alt="contemporary textile art piece hanging on a gallery wall with intricate mexican weaving patterns in neutral colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOOQi1YGCbwHJ8LrhAaYkv9amplCm9UmdzbL4gZRg5Vpj_rdJqNznjnOonuD0ndFo01U8nWq9EHGAAFb1h9RaU4oSFbSbu9fmzG_2-A4P1QS1CXjTeuF9TmteBr9rtBemDbxhFIGL0SWOR-jTCVvy50laXfhdXKXOD24d68nnz8WFrfPMx_EEYXDyHfDYbl9GjFveZD2rZVnr9RpNHizB2DxBSzBnI_YyjtseaxO-Wd_OPGk6OWRo3zNQ8TsPG-D5952cAXC0aNxU" style=""/>
+</div>
+</div>
+<div class="md:col-start-9 md:col-span-4">
+<span class="font-label text-xs text-outline mb-4 block" style="">Archive No. 882</span>
+<h3 class="font-headline text-4xl mb-6" style="">Woven Silence</h3>
+<p class="font-body text-secondary leading-relaxed mb-8" style="">
+                            A large-scale installation by Elena Ortiz exploring the sound of textiles in empty spaces. Hand-woven agave fiber.
+                        </p>
+<div class="font-label text-sm mb-12 flex items-center gap-4">
+<span class="text-primary font-bold" style="">$4,200</span>
+<span class="w-[1px] h-4 bg-outline-variant"></span>
+<span class="text-outline uppercase" style="">Available</span>
+</div>
+<button class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-all" data-link="shop.html" style="" type="button">Add to Collection</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-4 md:order-1 order-2">
+<span class="font-label text-xs text-outline mb-4 block" style="">Archive No. 914</span>
+<h3 class="font-headline text-4xl mb-6" style="">Volcanic Study IV</h3>
+<p class="font-body text-secondary leading-relaxed mb-8" style="">
+                            Sculptural piece carved from raw volcanic rock found in the Michoacán highlands. A study on permanence and decay.
+                        </p>
+<div class="font-label text-sm mb-12 flex items-center gap-4">
+<span class="text-primary font-bold" style="">$6,800</span>
+<span class="w-[1px] h-4 bg-outline-variant"></span>
+<span class="text-outline uppercase" style="">Private Collection Only</span>
+</div>
+<button class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-all" data-link="mariana-silva.html" style="" type="button">View Details</button>
+</div>
+<div class="md:col-start-6 md:col-span-7 md:order-2 order-1">
+<div class="relative overflow-hidden">
+<img class="w-full aspect-[4/3] object-cover" data-alt="minimalist dark stone sculpture with a perfectly smooth polished surface reflecting soft ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxBGDf1Ka-xoHcQtpzm4d4Z4kpyxDyuAXndNi-6MRhoRWjgLcw2hMTuQepWSNTAP4tzQlerB3uWDZveLeEZGaVNp2Rh-9pN0BT68bBqbxtjcCh7SfkEPfo03dxzM5oSMt3tvuT89evXC4mD92m3FHm_Z6djV8TUzWZ4jwaC7QqOlPtThoJI2Y865AOxgYmnQ9sweRr1zgk_-4doXmMSZUtUFFuMn45BQ7A7g4MQnqdJMNyVwDap0Moyax9TMfMWCF3nNhbjVBHUbk" style=""/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Contact (Minimalist) -->
+<section class="py-40 px-12 md:px-24 bg-surface-container-high">
+<div class="max-w-3xl">
+<h2 class="font-headline text-5xl mb-12" style="">Stay informed on new curations.</h2>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex-grow">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline block mb-2" style="">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline py-4 font-label text-sm focus:ring-0 focus:border-primary placeholder:text-neutral-400" placeholder="YOUR@EMAIL.COM" type="email"/>
+</div>
+<button class="bg-primary text-white px-12 py-4 font-label text-xs uppercase tracking-widest self-end" style="">Subscribe</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-20 px-12 md:px-24 mt-40 bg-[#f3f3f3] dark:bg-neutral-950 flex flex-col md:flex-row justify-between items-end gap-8 border-t border-black/5 dark:border-white/5">
+<div class="flex flex-col gap-8">
+<div class="font-serif italic text-xl dark:text-white" style="">On Gallery</div>
+<p class="font-mono text-[10px] uppercase tracking-[0.15em] dark:text-neutral-400 max-w-xs leading-relaxed" style="">
+                © 2026 on gallery. ARCHIVING MEXICAN HERITAGE.
+            </p>
+</div>
+<div class="flex gap-12">
+<div class="flex flex-col gap-4 items-end">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2" style="">Navigation</span>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Privacy</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Press</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Inquiries</a>
+</div>
+<div class="flex flex-col gap-4 items-end">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2" style="">Connect</span>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Instagram</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Twitter</a>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script></body></html>

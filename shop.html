@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE DIGITAL CURATOR | Shop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#cfc4c5",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-secondary-container": "#646464",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "tertiary-container": "#1b1c1c",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-variant": "#e2e2e2",
+                    "inverse-on-surface": "#f1f1f1",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#e3e2e2",
+                    "on-primary-fixed-variant": "#474747",
+                    "on-primary-fixed": "#1b1b1b",
+                    "outline": "#7e7576",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "background": "#f9f9f9",
+                    "surface-container-high": "#e8e8e8",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-primary-container": "#848484",
+                    "primary-container": "#1b1b1b",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f9f9f9",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "secondary-fixed": "#e4e2e2",
+                    "surface-dim": "#dadada",
+                    "primary": "#000000",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "primary-fixed": "#e2e2e2",
+                    "inverse-primary": "#c6c6c6",
+                    "inverse-surface": "#2f3131",
+                    "on-surface": "#1a1c1c",
+                    "on-surface-variant": "#4c4546",
+                    "surface-container": "#eeeeee",
+                    "surface-container-low": "#f3f3f3",
+                    "on-secondary-fixed-variant": "#474747",
+                    "tertiary": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#e4e2e2",
+                    "secondary": "#5e5e5e",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#5e5e5e",
+                    "on-tertiary-container": "#848484",
+                    "on-error": "#ffffff",
+                    "surface": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 h-24 bg-[#f9f9f9]/80 backdrop-blur-xl flex justify-between items-center px-12 md:px-24">
+<div class="font-serif text-2xl font-light tracking-[0.2em] text-black" style=""><img alt="On Gallery Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugbdxNY6PgURRkK8sujuhfJ9nkqh1WeduXBFhFH6q7PD979oV6SemNBvQ-8xABO7vnIFKINhZfaQTtZO6c39u-CqYAm082aAMqgAHXSrpkMF_ypTvcfyURpozP-Af9wM_AiRJA4YeZTepM-MWOepabRKvyjVfCqWvdmiosrrGxDQlaRaqqCEJQDWioOUeDzksb38dHUU23xa3UFr6DtwQJDsTvIAPmbj-3ajtFl4816_O6wlqlDE-eudmba56rHlIQ4H6V-YFIZ"/></div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="text-neutral-400 font-sans uppercase tracking-widest text-xs hover:text-black transition-all duration-500" href="index.html" style="">Home</a>
+<a class="text-neutral-400 font-sans uppercase tracking-widest text-xs hover:text-black transition-all duration-500" href="artists.html" style="">Artists</a>
+<a class="text-black border-b border-black pb-1 font-sans uppercase tracking-widest text-xs" href="shop.html" style="">Shop</a>
+</div>
+<div class="flex gap-8 items-center">
+<button class="scale-100 active:scale-95 transition-transform" style="">
+<span class="material-symbols-outlined text-black" style="">shopping_bag</span>
+</button>
+<button class="scale-100 active:scale-95 transition-transform md:hidden" style="">
+<span class="material-symbols-outlined text-black" style="">menu</span>
+</button>
+</div>
+</nav>
+<div class="fixed top-24 w-full h-[1px] bg-[#e8e8e8] z-50"></div>
+<main class="pt-48 px-12 md:px-24 max-w-[1600px] mx-auto">
+<!-- Header & Filter Section -->
+<header class="mb-24">
+<h1 class="font-headline text-6xl md:text-8xl font-light mb-12 tracking-tight" style="">The Marketplace</h1>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-6 py-2 text-xs font-label uppercase tracking-widest" style="">All Mediums</button>
+<button class="bg-surface-container-highest text-primary px-6 py-2 text-xs font-label uppercase tracking-widest hover:bg-surface-container-high transition-colors" style="">Painting</button>
+<button class="bg-surface-container-highest text-primary px-6 py-2 text-xs font-label uppercase tracking-widest hover:bg-surface-container-high transition-colors" style="">Sculpture</button>
+<button class="bg-surface-container-highest text-primary px-6 py-2 text-xs font-label uppercase tracking-widest hover:bg-surface-container-high transition-colors" style="">Textiles</button>
+<button class="bg-surface-container-highest text-primary px-6 py-2 text-xs font-label uppercase tracking-widest hover:bg-surface-container-high transition-colors" style="">Photography</button>
+</div>
+<div class="flex items-center gap-6 border-b border-outline-variant/30 pb-2 min-w-[240px]">
+<span class="font-label text-[10px] uppercase tracking-tighter text-outline" style="">Price Range</span>
+<select class="bg-transparent border-none focus:ring-0 font-label text-xs uppercase tracking-widest w-full cursor-pointer">
+<option>Under $5,000</option>
+<option>$5,000 — $15,000</option>
+<option>$15,000 — $50,000</option>
+<option>Private Collection</option>
+</select>
+</div>
+</div>
+</header>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-32">
+<!-- Art Card 1 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-8 transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="vibrant abstract oil painting with bold strokes of terracotta and obsidian black on a textured raw linen canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC508Ic6UhJzHjQpNU58Qzp2FslCMDSqjq7fsHUthtzT0lusihQCm50qhLzrlXZlX1zNyPGD4wIc5L68w6B8FCPEPUGnIuWS7wF9oegJ9o_x6EcLuhcFhoxdNBf-x8IHFsKlBcm4RIC1q3K4dx6UUvEW3SeB5p1cGHFquRK4BPeoV1wvSFH7B3u0pLY3jnf7YoZzJXufT4rV6JB6nsRZ4WY_SjRQTNeykSCVNeggU6F8_aRhhjM9UYQeGdOXU32jyW9v716N8GMW_k" style=""/>
+</div>
+<div class="flex justify-between items-start">
+<div class="space-y-2">
+<h3 class="font-headline text-2xl italic tracking-tight" style="">Espectro de Tierra</h3>
+<p class="font-label text-xs uppercase tracking-[0.15em] text-outline" style="">Alejandro Villaseñor</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline-variant mt-4" style="">Oil on Canvas, 2023</p>
+</div>
+<div class="text-right">
+<span class="font-label text-sm tracking-widest" style="">$8,400</span>
+</div>
+</div>
+<div class="mt-8 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="flex-1 bg-primary text-on-primary py-4 text-xs font-label uppercase tracking-widest" data-link="mailto:hola@tudominio.com?subject=Consulta%20de%20obra" style="" type="button">Inquire</button>
+<button class="px-6 border border-outline-variant/40 hover:bg-surface-container-low transition-colors" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</article>
+<!-- Art Card 2 (Asymmetric Tall) -->
+<article class="group cursor-pointer lg:mt-24">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-8 transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="minimalist monolithic black stone sculpture with smooth polished surfaces reflecting soft gallery lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzfm7k7i9cRbnEWZxEwGrWQLN4hmpHtwjjrN_JjFsp6I499iNkNcbTLgZRdXY0iHdhYVz3DniP0BvQbFMjYdo5eFNXMnTttmOzSYRyWaLxTnQ1-CKNwew21MNXJuJb8imJ25bp4-MshT4EEkjGnopDoUiO-IywluAjXEi4PGvCUuGRVn4qPVN0yV4QKZ18qJ5_iBTQu8z_yyvJCoBhOH8ZNc_osu_uVPPypEzfpyRkxGGMd_wwzvVKGwHmb3-N4ZcjN3-MNn-HPm4" style=""/>
+</div>
+<div class="flex justify-between items-start">
+<div class="space-y-2">
+<h3 class="font-headline text-2xl italic tracking-tight" style="">Silencio Volcánico</h3>
+<p class="font-label text-xs uppercase tracking-[0.15em] text-outline" style="">Elena Rivas</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline-variant mt-4" style="">Hand-carved Obsidian</p>
+</div>
+<div class="text-right">
+<span class="font-label text-sm tracking-widest" style="">$12,000</span>
+</div>
+</div>
+<div class="mt-8 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="flex-1 bg-primary text-on-primary py-4 text-xs font-label uppercase tracking-widest" data-link="mailto:hola@tudominio.com?subject=Consulta%20de%20obra" style="" type="button">Inquire</button>
+<button class="px-6 border border-outline-variant/40 hover:bg-surface-container-low transition-colors" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</article>
+<!-- Art Card 3 -->
+<article class="group cursor-pointer">
+<div class="aspect-[1/1] overflow-hidden bg-surface-container-low mb-8 transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="intricately woven textile wall hanging with geometric Zapotec patterns in natural indigo and cream dyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2KRLMzXlSntVaNgFztXaDDkG7HmSCUfxDoHT9np52dXOfWYLWt9HcMAoCCEhotxOMrHSRpgpAXF0__6d4Mjh9qWxN2N1nUy6BoXbO-LACDLzWI2sJHTNh7GXRB3goeL6_OfAsrm4342CCWEYiQyW-oB-IOQLURO29GZM4e8TF_11BRb1IDd4ZJdmfkue6MV7dYT4mmpciN7AmfKgBJe4AdUaPgqWWBJqRXkPLgTqRAVRffaqen91KK3vksYwcHLOUJcMEa4CDKXw" style=""/>
+</div>
+<div class="flex justify-between items-start">
+<div class="space-y-2">
+<h3 class="font-headline text-2xl italic tracking-tight" style="">Tramas de Oaxaca</h3>
+<p class="font-label text-xs uppercase tracking-[0.15em] text-outline" style="">Collective Taller 4</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline-variant mt-4" style="">Natural Dye Textile</p>
+</div>
+<div class="text-right">
+<span class="font-label text-sm tracking-widest" style="">$4,200</span>
+</div>
+</div>
+<div class="mt-8 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="flex-1 bg-primary text-on-primary py-4 text-xs font-label uppercase tracking-widest" data-link="mailto:hola@tudominio.com?subject=Consulta%20de%20obra" style="" type="button">Inquire</button>
+<button class="px-6 border border-outline-variant/40 hover:bg-surface-container-low transition-colors" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</article>
+<!-- Art Card 4 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-8 transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="high-contrast black and white architectural photography of modern mexican brutalist concrete structure with deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5q7zfpAHkXJs4ug1xd_La4l01paLxEu0OXANi4g6Nx7Yn9YjGMSI384tZVZLg_klCJscs-uPDm9hJjm-GV5AODzZ3mz1EZjbyrGhRdC-EgZl7YmS5Q5UBCnfyFoQnaGcg1LGsKW6Dtl7BB7-Re4_DbqkW-UGS2ICuuLQOFoIa68OwD5UQNrJj_RtQBK57ROzGCAKOg4BxQbph3ZN4uQa4L_rFwNmLtiXFLmslh3k5j8Iv-kp0zuSExQiUGPLjAUEop399sTgwwp4" style=""/>
+</div>
+<div class="flex justify-between items-start">
+<div class="space-y-2">
+<h3 class="font-headline text-2xl italic tracking-tight" style="">Geometría del Vacío</h3>
+<p class="font-label text-xs uppercase tracking-[0.15em] text-outline" style="">Marco Antonio Cruz</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline-variant mt-4" style="">Silver Gelatin Print</p>
+</div>
+<div class="text-right">
+<span class="font-label text-sm tracking-widest" style="">$3,500</span>
+</div>
+</div>
+<div class="mt-8 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="flex-1 bg-primary text-on-primary py-4 text-xs font-label uppercase tracking-widest" data-link="mailto:hola@tudominio.com?subject=Consulta%20de%20obra" style="" type="button">Inquire</button>
+<button class="px-6 border border-outline-variant/40 hover:bg-surface-container-low transition-colors" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</article>
+<!-- Art Card 5 -->
+<article class="group cursor-pointer lg:-mt-24">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-8 transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="contemporary ceramic vessel with cracked white glaze and delicate hand-painted cobalt blue details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvjzKJDRLvX0Xo0fImLUuN906MidF-cWe7bgz-lbCZNff0iVVcgvWpY2qTiU0GKh5x_tgoJ1LOJUnSCTq8RY5grg77ueMOQ_dgGhsOMtvbA94iWEer9gPgFzM6B-FPSTD12RPlv6fGFiLrBzf26wdCqFm2TyVH_D7oxjGogZLcbYGJBWDCgtFXMNVfYcRyCvNRWFDb9Tol0BUbyt72_zt3VjsrdZr8hdz1MzyBqNM-ggidvd3z8QThunSrosZaVPuR6kNj9ucdCpc" style=""/>
+</div>
+<div class="flex justify-between items-start">
+<div class="space-y-2">
+<h3 class="font-headline text-2xl italic tracking-tight" style="">Vasija Fragmentada</h3>
+<p class="font-label text-xs uppercase tracking-[0.15em] text-outline" style="">Sofía García</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline-variant mt-4" style="">Ceramic with Enamel</p>
+</div>
+<div class="text-right">
+<span class="font-label text-sm tracking-widest" style="">$2,100</span>
+</div>
+</div>
+<div class="mt-8 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="flex-1 bg-primary text-on-primary py-4 text-xs font-label uppercase tracking-widest" data-link="mailto:hola@tudominio.com?subject=Consulta%20de%20obra" style="" type="button">Inquire</button>
+<button class="px-6 border border-outline-variant/40 hover:bg-surface-container-low transition-colors" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</article>
+<!-- Art Card 6 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-8 transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="large scale contemporary mural study on paper with charcoal and earthy pigments showing human forms" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKMwfdnC5oAuL9CeYOyBN16ulFrmFEmCOBq7GUMzqEXILo5-bjvmHrgItfAXOFGpby8YaUY3xtTft5azMPLGcXZxtoI8HLVW4hgM1H2eSrGoRIzNwoWHoODxXyJEcMlJFSuQiGFx6dCm8cHSadJ2qKAxWAEq4QpaCfkAue_bOfkBaGRM2nlzBP1sAH6pJuGVm1uM0wyPBxZnTDqi3dNsyvmapbODjPwf9y-IQLu3WyCf08ayHErhfZKk9O3IbHL1_LkzazGLdZe8E" style=""/>
+</div>
+<div class="flex justify-between items-start">
+<div class="space-y-2">
+<h3 class="font-headline text-2xl italic tracking-tight" style="">Cuerpos en Reposo</h3>
+<p class="font-label text-xs uppercase tracking-[0.15em] text-outline" style="">David Alfaro Jr.</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline-variant mt-4" style="">Mixed Media on Paper</p>
+</div>
+<div class="text-right">
+<span class="font-label text-sm tracking-widest" style="">$9,200</span>
+</div>
+</div>
+<div class="mt-8 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="flex-1 bg-primary text-on-primary py-4 text-xs font-label uppercase tracking-widest" data-link="mailto:hola@tudominio.com?subject=Consulta%20de%20obra" style="" type="button">Inquire</button>
+<button class="px-6 border border-outline-variant/40 hover:bg-surface-container-low transition-colors" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Pagination / Load More -->
+<div class="mt-40 mb-20 text-center">
+<button class="group inline-flex items-center gap-4 py-8" style="">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary" style="">Load More Works</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-y-2 transition-transform duration-300" style="">expand_more</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 md:px-24 mt-40 bg-[#f3f3f3] flex flex-col md:flex-row justify-between items-end gap-8 border-t border-black/5">
+<div class="flex flex-col gap-6">
+<div class="font-serif italic text-xl text-black" style="">THE DIGITAL CURATOR</div>
+<p class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 max-w-xs" style="">
+                © 2024 THE DIGITAL CURATOR. ARCHIVING MEXICAN HERITAGE.
+            </p>
+</div>
+<div class="flex gap-12">
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-black underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Privacy</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-black underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Press</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-black underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Inquiries</a>
+</div>
+</footer>
+
+<script src="script.js"></script></body></html>
