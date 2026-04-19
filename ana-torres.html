@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ana Torres | THE DIGITAL CURATOR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#cfc4c5",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-secondary-container": "#646464",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "tertiary-container": "#1b1c1c",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-variant": "#e2e2e2",
+                    "inverse-on-surface": "#f1f1f1",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#e3e2e2",
+                    "on-primary-fixed-variant": "#474747",
+                    "on-primary-fixed": "#1b1b1b",
+                    "outline": "#7e7576",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "background": "#f9f9f9",
+                    "surface-container-high": "#e8e8e8",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-primary-container": "#848484",
+                    "primary-container": "#1b1b1b",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f9f9f9",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "secondary-fixed": "#e4e2e2",
+                    "surface-dim": "#dadada",
+                    "primary": "#000000",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "primary-fixed": "#e2e2e2",
+                    "inverse-primary": "#c6c6c6",
+                    "inverse-surface": "#2f3131",
+                    "on-surface": "#1a1c1c",
+                    "on-surface-variant": "#4c4546",
+                    "surface-container": "#eeeeee",
+                    "surface-container-low": "#f3f3f3",
+                    "on-secondary-fixed-variant": "#474747",
+                    "tertiary": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#e4e2e2",
+                    "secondary": "#5e5e5e",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#5e5e5e",
+                    "on-tertiary-container": "#848484",
+                    "on-error": "#ffffff",
+                    "surface": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #000000;
+        }
+        ::selection {
+            background: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 h-24 bg-[#f9f9f9]/80 backdrop-blur-xl dark:bg-black/80">
+<div class="flex justify-between items-center px-12 md:px-24 w-full h-full">
+<div class="font-serif text-2xl font-light tracking-[0.2em] text-black dark:text-white" style=""><img alt="On Gallery Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugbdxNY6PgURRkK8sujuhfJ9nkqh1WeduXBFhFH6q7PD979oV6SemNBvQ-8xABO7vnIFKINhZfaQTtZO6c39u-CqYAm082aAMqgAHXSrpkMF_ypTvcfyURpozP-Af9wM_AiRJA4YeZTepM-MWOepabRKvyjVfCqWvdmiosrrGxDQlaRaqqCEJQDWioOUeDzksb38dHUU23xa3UFr6DtwQJDsTvIAPmbj-3ajtFl4816_O6wlqlDE-eudmba56rHlIQ4H6V-YFIZ"/></div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500 scale-100 active:scale-95" href="index.html" style="">Home</a>
+<a class="text-black dark:text-white border-b border-black dark:border-white pb-1 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500 scale-100 active:scale-95" href="artists.html" style="">Artists</a>
+<a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500 scale-100 active:scale-95" href="shop.html" style="">Shop</a>
+</div>
+<div class="flex items-center gap-8">
+<button class="material-symbols-outlined text-black dark:text-white scale-100 active:scale-95 transition-transform" data-icon="shopping_bag" style="">shopping_bag</button>
+<button class="material-symbols-outlined text-black dark:text-white scale-100 active:scale-95 transition-transform" data-icon="menu" style="">menu</button>
+</div>
+</div>
+<div class="bg-[#e8e8e8] dark:bg-neutral-900 h-[1px]"></div>
+</nav>
+<main class="pt-24 min-h-screen">
+<!-- Hero Section: Artist Profile -->
+<section class="px-12 md:px-24 pt-20 pb-40 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block" style="">Color Field & Mixed Media</span>
+<h1 class="font-headline text-7xl md:text-8xl font-light leading-none tracking-tighter mb-12" style="">Ana<br/>Torres</h1>
+<div class="max-w-md">
+<p class="font-body text-lg leading-relaxed mb-8 text-on-surface-variant" style="">
+                        Born in Guadalajara, Ana Torres builds luminous compositions that explore emotion through color, rhythm, and layered transparency. Her practice moves between painting and mixed media, creating immersive surfaces that suggest states of contemplation, inner movement, and sensorial memory.
+                    </p>
+<p class="font-body text-sm leading-relaxed text-secondary mb-12 italic" style="">
+                        "Color is not decoration; it is the emotional structure of the piece."
+                    </p>
+<button class="bg-primary text-on-primary px-10 py-5 text-sm uppercase tracking-widest font-label hover:bg-neutral-800 transition-colors" style="">
+                        Inquire for Commissions
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="relative aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-90 contrast-125" data-alt="minimalist black and white editorial portrait of a female artist in a sunlit gallery space with sharp shadows" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80" style=""/>
+</div>
+</div>
+</section>
+<!-- Featured Artwork -->
+<section class="bg-surface-container-low py-40 px-12 md:px-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+<div class="lg:col-span-8">
+<div class="aspect-video bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="large abstract oil painting with vibrant ochre, deep crimson and textured charcoal strokes representing a Mexican desert landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqK0wXCXxXjHkzVKwgr57y7pNJ6Kyycew97yqv4fhlMdnRB385Q8x6Ktim19ZjPmMIgvYQe3aBmSQ1uVUgZdgYN3aR66is91ou85gqKtx-4fNQuMJ1q9UJa_xl_8xLBqv-XkJOqOElyoYP_m9UG-zP1fDTsU-JNdP8Mo8s7d_1LrzQZ9IX2DPm6JAMDd9gIw9NT4XnxLMKWOYmmb5ZevPMAFPC2bzjwmgGhN_72YTXo5vWW-iaIQIrjAkO3c6D-Pr5Ie7SFrlFNz0" style=""/>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-center">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-4" style="">Featured Work</span>
+<h2 class="font-headline text-4xl mb-6" style="">Fragmentos del Sol, No. 4</h2>
+<div class="space-y-4 mb-10">
+<div class="flex justify-between border-b border-black/5 pb-2">
+<span class="font-label text-[10px] uppercase text-outline" style="">Medium</span>
+<span class="font-label text-[10px] uppercase" style="">Oil on Raw Linen</span>
+</div>
+<div class="flex justify-between border-b border-black/5 pb-2">
+<span class="font-label text-[10px] uppercase text-outline" style="">Dimensions</span>
+<span class="font-label text-[10px] uppercase" style="">180 x 220 cm</span>
+</div>
+<div class="flex justify-between border-b border-black/5 pb-2">
+<span class="font-label text-[10px] uppercase text-outline" style="">Year</span>
+<span class="font-label text-[10px] uppercase" style="">2023</span>
+</div>
+</div>
+<button class="text-primary font-label text-xs uppercase tracking-widest border-b border-black pb-1 self-start hover:text-outline hover:border-outline transition-all" style="">View Exhibition</button>
+</div>
+</div>
+</section>
+<!-- Gallery Grid -->
+<section class="py-40 px-12 md:px-24">
+<div class="flex justify-between items-end mb-24">
+<div>
+<span class="font-label text-xs uppercase tracking-[0.3em] text-outline block mb-4" style="">Archive</span>
+<h3 class="font-headline text-5xl" style="">Available Works</h3>
+</div>
+<div class="flex gap-4">
+<button class="p-3 bg-surface border border-black/10 hover:bg-black hover:text-white transition-colors" style="">
+<span class="material-symbols-outlined text-sm" style="">grid_view</span>
+</button>
+<button class="p-3 bg-surface border border-black/10 hover:bg-black hover:text-white transition-colors" style="">
+<span class="material-symbols-outlined text-sm" style="">list</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-32 gap-x-12">
+<!-- Art Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container mb-8 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="color field painting in warm pink and orange tones" src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=900&q=80" style=""/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-2xl" style="">Luz Adentro</h4>
+<span class="font-label text-xs text-outline" style="">$4,100</span>
+</div>
+<p class="font-label text-[10px] uppercase tracking-widest text-secondary" style="">Acrylic on Canvas, 2024</p>
+</div>
+</div>
+<!-- Art Card 2 -->
+<div class="group cursor-pointer mt-24">
+<div class="aspect-[3/4] bg-surface-container mb-8 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="soft pastel abstract artwork with layered texture" src="https://images.unsplash.com/photo-1578301979108-0c0dbb2d8f83?auto=format&fit=crop&w=900&q=80" style=""/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-2xl" style="">Aire Rosa</h4>
+<span class="font-label text-xs text-outline" style="">$3,900</span>
+</div>
+<p class="font-label text-[10px] uppercase tracking-widest text-secondary" style="">Acrylic on Canvas, 2023</p>
+</div>
+</div>
+<!-- Art Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container mb-8 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="abstract painting with warm gold leaf accents and earthy umber tones evoking ancient artifacts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmigsSvhS6hZILbqDSOiw9Axe5c7JcfRvgyjApc8GwQU6Z1k4ZwpO6Kn7fPFerSUmWwFrprBZqhBsVGfi4R6bdkLmIZwdV2nl7XfZ_aQU9QEP-LxD-9cLKPmsvEfmYW-dPlczMsHKS5PbjoTzy4v8HgPkZKa-wrkCMiIXm9HL0-VlfwFjldRW9Bkui3uX11GDqTKuNjTXJnzEALalBceMbqsrS4c4yWxFIp23kCQuK96YhkbYRYuxAdaeudFgfa4RjsBBVx_Av9Gg" style=""/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-2xl" style="">Oro de la Tierra</h4>
+<span class="font-label text-xs text-outline" style="">Private Collection</span>
+</div>
+<p class="font-label text-[10px] uppercase tracking-widest text-secondary" style="">Mixed Media &amp; Gold Leaf, 2022</p>
+</div>
+</div>
+<!-- Art Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container mb-8 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="subtle abstract artwork with thin black lines on a cream textured background resembling topographic maps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_SPs6QyNHOlQNa0PepSeDCmVVCKmxkHkuRo_EgkPHNoDYnphA2NHjYms-lPn8_CjAHIy2DtAP1c6mNH8KzMcenThHgAFlCyUe14ORXCZqc7tD7LV1JCx2NoeBQz32yoW9pMajGKEyokyfUSw627IMTB_o1ts5MWKPRYudo9IULB3949HvHlurB4PuILkC-9LgP2EsaPS42wPSmmycl7sttqS7PM89QDj-xq_zrdmbG3rdT3ek6VjYcJM9NQ2xiPHRQ6612h-2ZcU" style=""/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-2xl" style="">Líneas de Tiempo</h4>
+<span class="font-label text-xs text-outline" style="">$5,300</span>
+</div>
+<p class="font-label text-[10px] uppercase tracking-widest text-secondary" style="">Ink and Graphite on Paper, 2024</p>
+</div>
+</div>
+<!-- Art Card 5 -->
+<div class="group cursor-pointer mt-12">
+<div class="aspect-[4/5] bg-surface-container mb-8 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="bold abstract painting with large fields of vermilion and raw sienna separated by a stark white void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO6ppxC7SuBDwBQLX56wnC9UOoPE8Kpo4iSaXw6t3ZN2GxVoY9ev7ziLoNMfOkDn4_tEeXAIrpBYS3IZvydL2KT0-4GUrfR58X_5KmNPGt3yoNJg5Zvr1tHL2EQ19cjZKKAswEZJtdjpL4mT0JtKAjrmKokjWjEEcgLNOpnqrQqUPmAa2v5YFkfa7qzGasSan4BdUI3vO-PkCKMjbwv6ngkJHPmDAPmZ83moUUUioG1KHaV2tW7PzDiMt0R9aWkkcAf2dywz9gwHk" style=""/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-2xl" style="">El Vacío Rojo</h4>
+<span class="font-label text-xs text-outline" style="">$6,400</span>
+</div>
+<p class="font-label text-[10px] uppercase tracking-widest text-secondary" style="">Acrylic on Linen, 2024</p>
+</div>
+</div>
+<!-- Art Card 6 -->
+<div class="group cursor-pointer -mt-12">
+<div class="aspect-[4/5] bg-surface-container mb-8 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="ethereal abstract work with layered washes of grey and pale blue suggesting mist over volcanic peaks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjB16GfQCKSE_KN_qrYvcRSmwpuK0qbiHq6IvOCjs3T7H8_tLnp6Q96nxtHt_Y2sVn2yr836PUXtufHVgUfRMuX4TvD1d2veoQWuwJuT35IilWm9RCPLqtqUWBQVv93C7m0IwdTaa4yxjpe869S_ldpUdauHy5H0Rimsj4KOSYb5ihEEzjqU_Q47TvRXEce2bdQKJwpAeIHS2s6nacT0uOBO6Iz5q6gZRR8KP4mIyO4p-ttWuxWvZJnl1Y6oKz-lS51H4yvsek4T0" style=""/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-2xl" style="">Neblina del Valle</h4>
+<span class="font-label text-xs text-outline" style="">$3,200</span>
+</div>
+<p class="font-label text-[10px] uppercase tracking-widest text-secondary" style="">Watercolor on Archival Paper, 2023</p>
+</div>
+</div>
+</div>
+<div class="mt-40 text-center">
+<button class="border border-black px-12 py-6 font-label text-xs uppercase tracking-widest hover:bg-black hover:text-white transition-all" style="">Load Full Catalog</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 md:px-24 mt-40 bg-[#f3f3f3] dark:bg-neutral-950">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 w-full border-t border-black/5 dark:border-white/5 pt-12">
+<div class="flex flex-col gap-6">
+<div class="font-serif italic text-xl dark:text-white" style="">THE DIGITAL CURATOR</div>
+<div class="font-mono text-[10px] uppercase tracking-[0.15em] dark:text-neutral-400 text-black" style="">
+                    © 2024 THE DIGITAL CURATOR. ARCHIVING MEXICAN HERITAGE.
+                </div>
+</div>
+<div class="flex gap-10">
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Privacy</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Press</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Inquiries</a>
+</div>
+</div>
+</footer>
+</body></html>
