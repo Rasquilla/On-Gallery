@@ -89,26 +89,26 @@
     </style>
 <title>Galería de Arte Mexicano | Artists</title></head>
 <body class="font-body text-on-background selection:bg-primary-fixed selection:text-primary">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 h-24 bg-[#f9f9f9]/80 backdrop-blur-xl dark:bg-black/80">
-<div class="flex justify-between items-center px-12 md:px-24 w-full h-full">
-<div class="font-serif text-2xl font-light tracking-[0.2em] text-black dark:text-white" style=""><img alt="On Gallery Logo" class="h-10 w-auto object-contain block dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0ugbdxNY6PgURRkK8sujuhfJ9nkqh1WeduXBFhFH6q7PD979oV6SemNBvQ-8xABO7vnIFKINhZfaQTtZO6c39u-CqYAm082aAMqgAHXSrpkMF_ypTvcfyURpozP-Af9wM_AiRJA4YeZTepM-MWOepabRKvyjVfCqWvdmiosrrGxDQlaRaqqCEJQDWioOUeDzksb38dHUU23xa3UFr6DtwQJDsTvIAPmbj-3ajtFl4816_O6wlqlDE-eudmba56rHlIQ4H6V-YFIZ"/></div>
-<nav class="hidden md:flex gap-12 items-center">
-<a class="font-sans uppercase tracking-widest text-xs hover:text-black transition-all duration-500 text-neutral-400" href="index.html" style="">Home</a>
-<a class="text-black border-b border-black pb-1 font-serif tracking-tight text-lg" href="artists.html" style="">Artists</a>
-<a class="font-sans uppercase tracking-widest text-xs hover:text-black transition-all duration-500 text-neutral-400" href="shop.html" style="">Shop</a>
-</nav>
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 h-24 bg-[#f9f9f9]/80 backdrop-blur-xl dark:bg-black/80">
+<div class="flex justify-between items-center px-8 md:px-24 w-full h-full">
+<div class="flex items-center gap-8 md:gap-12">
+<a class="font-serif text-2xl font-light tracking-[0.2em] text-black dark:text-white" href="index.html"><img alt="On Gallery Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugbdxNY6PgURRkK8sujuhfJ9nkqh1WeduXBFhFH6q7PD979oV6SemNBvQ-8xABO7vnIFKINhZfaQTtZO6c39u-CqYAm082aAMqgAHXSrpkMF_ypTvcfyURpozP-Af9wM_AiRJA4YeZTepM-MWOepabRKvyjVfCqWvdmiosrrGxDQlaRaqqCEJQDWioOUeDzksb38dHUU23xa3UFr6DtwQJDsTvIAPmbj-3ajtFl4816_O6wlqlDE-eudmba56rHlIQ4H6V-YFIZ"/></a>
+<div class="hidden md:flex gap-8">
+<a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="index.html">Home</a>
+<a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="about.html">About</a>
+<a class="text-black dark:text-white border-b border-black dark:border-white pb-1 font-sans uppercase tracking-widest text-xs transition-all duration-500" href="artists.html">Artists</a>
+<a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="shop.html">Shop</a>
+<a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="news.html">News</a>
+</div>
+</div>
 <div class="flex items-center gap-6">
-<button class="scale-100 active:scale-95 transition-transform" style="">
-<span class="material-symbols-outlined text-black" data-icon="shopping_bag" style="">shopping_bag</span>
-</button>
-<button class="scale-100 active:scale-95 transition-transform" style="">
-<span class="material-symbols-outlined text-black" data-icon="menu" style="">menu</span>
-</button>
+<a class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform" href="shop.html" aria-label="Shop">shopping_bag</a>
+<button class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform md:hidden" type="button" aria-label="Menu">menu</button>
 </div>
 </div>
 <div class="bg-[#e8e8e8] dark:bg-neutral-900 h-[1px]"></div>
-</header>
+</nav>
 <main class="pt-40 pb-20">
 <!-- Page Header & Filter Section -->
 <section class="px-12 md:px-24 mb-24">
@@ -247,24 +247,37 @@
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="w-full py-20 px-12 md:px-24 mt-40 bg-[#f3f3f3] dark:bg-neutral-950">
-<div class="flex flex-col md:flex-row justify-between items-end gap-8 w-full border-t border-black/5 dark:border-white/5 pt-12">
-<div class="max-w-xs">
-<div class="font-serif italic text-xl dark:text-white mb-6" style="">THE DIGITAL CURATOR</div>
-<p class="font-mono text-[10px] uppercase tracking-[0.15em] dark:text-neutral-400 leading-relaxed text-neutral-500" style="">
-                    A digital space dedicated to the preservation and promotion of Mexican artistic heritage in the global landscape.
-                </p>
+<!-- Footer Component -->
+<footer class="w-full py-20 px-12 md:px-24 mt-40 bg-[#f3f3f3] dark:bg-neutral-950 border-t border-black/5 dark:border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<div class="md:col-span-4 flex flex-col gap-8">
+<div class="font-serif italic text-xl dark:text-white">ON! Gallery</div>
+<p class="font-mono text-[10px] uppercase tracking-[0.15em] dark:text-neutral-400 max-w-xs leading-relaxed">
+© 2026 ON! Gallery. Contemporary art, curatorial practice and collecting in San Miguel de Allende.
+</p>
 </div>
-<div class="flex flex-col items-end gap-4">
-<div class="flex gap-8">
-<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Privacy</a>
-<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Press</a>
-<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="#" style="">Inquiries</a>
+<div class="md:col-span-3 flex flex-col gap-4">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2">Visit</span>
+<p class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 leading-relaxed">
+Diezmo Viejo No. 5<br/>
+Zona Centro<br/>
+San Miguel de Allende, Guanajuato<br/>
+CP 37700
+</p>
 </div>
-<div class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-400" style="">
-                    © 2024 THE DIGITAL CURATOR. ARCHIVING MEXICAN HERITAGE.
-                </div>
+<div class="md:col-span-2 flex flex-col gap-4">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2">Navigation</span>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="about.html">About</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="artists.html">Artists</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="shop.html">Shop</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="news.html">News</a>
+</div>
+<div class="md:col-span-3 flex flex-col gap-4">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2">Contact</span>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="tel:+524150000000">+52 (415) 000 0000</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="mailto:hello@ongallery.art">hello@ongallery.art</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="https://www.instagram.com/on.gallery.art/" target="_blank" rel="noopener">Instagram @on.gallery.art</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="https://www.facebook.com/ongallery" target="_blank" rel="noopener">Facebook ON Gallery</a>
 </div>
 </div>
 </footer>
