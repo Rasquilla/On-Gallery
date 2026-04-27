@@ -82,6 +82,16 @@
         body {
             background-color: #f9f9f9;
         }
+        .gallery-image-reel {
+            animation: galleryReel 28s linear infinite;
+        }
+        .gallery-image-reel:hover {
+            animation-play-state: paused;
+        }
+        @keyframes galleryReel {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
     </style>
 
 <meta name="description" content="ON! Gallery is a contemporary art gallery in San Miguel de Allende promoting painting, sculpture, installation, photography, object-based practices and digital media through curatorial exhibitions and conscious collecting."/>
@@ -128,21 +138,47 @@
 </div>
 </div>
 
-<!-- About Preview Section -->
-<section class="px-12 md:px-24 py-32 border-t border-black/5">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
-<div class="md:col-span-4">
-<span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block">About ON! Gallery</span>
-<h2 class="font-headline text-5xl md:text-6xl font-light leading-tight">A platform for contemporary art in San Miguel de Allende.</h2>
-</div>
-<div class="md:col-span-7 md:col-start-6">
-<p class="font-body text-lg text-secondary leading-relaxed mb-8">
-ON! Gallery is a contemporary art gallery based in San Miguel de Allende, dedicated to building a curatorial platform for artists across generations. Its program connects emerging and established voices through exhibitions, collecting advisory and cultural dialogue.
-</p>
-<a class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-colors" href="about.html">Read More</a>
-</div>
-</div>
 </section>
+<!-- About Preview Section with Gallery Reel -->
+<section class="px-12 md:px-24 py-32 border-t border-black/5 overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block">About ON! Gallery</span>
+<h2 class="font-headline text-5xl md:text-6xl font-light leading-tight mb-8">A contemporary art gallery rooted in San Miguel de Allende.</h2>
+<p class="font-body text-lg text-secondary leading-relaxed mb-10 max-w-xl">
+ON! Gallery builds a curatorial platform for contemporary Mexican and international art, connecting artists, collectors and cultural audiences through exhibitions, advisory and meaningful encounters with painting, sculpture, photography, installation and digital media.
+</p>
+<div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+<a class="bg-primary text-white px-10 py-5 font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-colors" href="about.html">Discover the Gallery</a>
+<a class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-colors" href="news.html">View News & Events</a>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="relative">
+<div class="mb-6 flex justify-end">
+<div class="w-full md:w-[58%] overflow-hidden bg-surface-container aspect-[3/4]">
+<img class="w-full h-full object-cover grayscale-[0.25] hover:grayscale-0 transition-all duration-700" alt="Contemporary art detail inside a gallery space" src="https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=900&q=80"/>
+</div>
+</div>
+<div class="relative overflow-hidden border-y border-black/10 py-4">
+<div class="gallery-image-reel flex gap-4 w-max">
+<img class="h-32 md:h-40 aspect-[4/3] object-cover" alt="Gallery wall with framed contemporary artworks" src="https://images.unsplash.com/photo-1594794312433-05a69a98b7a0?auto=format&fit=crop&w=700&q=80"/>
+<img class="h-32 md:h-40 aspect-[4/3] object-cover" alt="Visitors observing contemporary art exhibition" src="https://images.unsplash.com/photo-1564399579883-451a5d44ec08?auto=format&fit=crop&w=700&q=80"/>
+<img class="h-32 md:h-40 aspect-[4/3] object-cover" alt="Minimal gallery interior with sculpture and natural light" src="https://images.unsplash.com/photo-1566054757965-8c4085344c96?auto=format&fit=crop&w=700&q=80"/>
+<img class="h-32 md:h-40 aspect-[4/3] object-cover" alt="Curated contemporary art exhibition details" src="https://images.unsplash.com/photo-1579783901586-d88db74b4fe4?auto=format&fit=crop&w=700&q=80"/>
+<img class="h-32 md:h-40 aspect-[4/3] object-cover" alt="Gallery wall with framed contemporary artworks" src="https://images.unsplash.com/photo-1594794312433-05a69a98b7a0?auto=format&fit=crop&w=700&q=80"/>
+<img class="h-32 md:h-40 aspect-[4/3] object-cover" alt="Visitors observing contemporary art exhibition" src="https://images.unsplash.com/photo-1564399579883-451a5d44ec08?auto=format&fit=crop&w=700&q=80"/>
+<img class="h-32 md:h-40 aspect-[4/3] object-cover" alt="Minimal gallery interior with sculpture and natural light" src="https://images.unsplash.com/photo-1566054757965-8c4085344c96?auto=format&fit=crop&w=700&q=80"/>
+<img class="h-32 md:h-40 aspect-[4/3] object-cover" alt="Curated contemporary art exhibition details" src="https://images.unsplash.com/photo-1579783901586-d88db74b4fe4?auto=format&fit=crop&w=700&q=80"/>
+</div>
+</div>
+<div class="absolute -bottom-8 right-8 bg-primary text-white p-8 max-w-xs hidden md:block">
+<p class="font-headline text-3xl leading-tight mb-4">A living space for art, ideas and collectors.</p>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/60">San Miguel de Allende</span>
+</div>
+</div>
+</div>
+</div>
 </section>
 <!-- Curated Collections (Bento Grid) -->
 <section class="bg-surface-container-low py-40 px-12 md:px-24">
@@ -192,58 +228,6 @@ ON! Gallery is a contemporary art gallery based in San Miguel de Allende, dedica
 </div>
 </div>
 </section>
-<!-- New Arrivals (Editorial Layout) -->
-<section class="py-40 px-12 md:px-24">
-<div class="flex items-center gap-4 mb-24">
-<div class="h-[1px] w-12 bg-primary"></div>
-<h2 class="font-label text-xs uppercase tracking-[0.4em]" style="">New Arrivals</h2>
-</div>
-<div class="space-y-48">
-<!-- Item 1 -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-<div class="md:col-span-7">
-<div class="relative overflow-hidden">
-<img class="w-full aspect-[4/3] object-cover" data-alt="contemporary textile art piece hanging on a gallery wall with intricate mexican weaving patterns in neutral colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOOQi1YGCbwHJ8LrhAaYkv9amplCm9UmdzbL4gZRg5Vpj_rdJqNznjnOonuD0ndFo01U8nWq9EHGAAFb1h9RaU4oSFbSbu9fmzG_2-A4P1QS1CXjTeuF9TmteBr9rtBemDbxhFIGL0SWOR-jTCVvy50laXfhdXKXOD24d68nnz8WFrfPMx_EEYXDyHfDYbl9GjFveZD2rZVnr9RpNHizB2DxBSzBnI_YyjtseaxO-Wd_OPGk6OWRo3zNQ8TsPG-D5952cAXC0aNxU" style=""/>
-</div>
-</div>
-<div class="md:col-start-9 md:col-span-4">
-<span class="font-label text-xs text-outline mb-4 block" style="">Archive No. 882</span>
-<h3 class="font-headline text-4xl mb-6" style="">Woven Silence</h3>
-<p class="font-body text-secondary leading-relaxed mb-8" style="">
-                            A large-scale installation by Elena Ortiz exploring the sound of textiles in empty spaces. Hand-woven agave fiber.
-                        </p>
-<div class="font-label text-sm mb-12 flex items-center gap-4">
-<span class="text-primary font-bold" style="">$4,200</span>
-<span class="w-[1px] h-4 bg-outline-variant"></span>
-<span class="text-outline uppercase" style="">Available</span>
-</div>
-<button class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-all" data-link="shop.html" style="" type="button">Add to Collection</button>
-</div>
-</div>
-<!-- Item 2 -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-<div class="md:col-span-4 md:order-1 order-2">
-<span class="font-label text-xs text-outline mb-4 block" style="">Archive No. 914</span>
-<h3 class="font-headline text-4xl mb-6" style="">Volcanic Study IV</h3>
-<p class="font-body text-secondary leading-relaxed mb-8" style="">
-                            Sculptural piece carved from raw volcanic rock found in the Michoacán highlands. A study on permanence and decay.
-                        </p>
-<div class="font-label text-sm mb-12 flex items-center gap-4">
-<span class="text-primary font-bold" style="">$6,800</span>
-<span class="w-[1px] h-4 bg-outline-variant"></span>
-<span class="text-outline uppercase" style="">Private Collection Only</span>
-</div>
-<button class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-all" data-link="mariana-silva.html" style="" type="button">View Details</button>
-</div>
-<div class="md:col-start-6 md:col-span-7 md:order-2 order-1">
-<div class="relative overflow-hidden">
-<img class="w-full aspect-[4/3] object-cover" data-alt="minimalist dark stone sculpture with a perfectly smooth polished surface reflecting soft ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxBGDf1Ka-xoHcQtpzm4d4Z4kpyxDyuAXndNi-6MRhoRWjgLcw2hMTuQepWSNTAP4tzQlerB3uWDZveLeEZGaVNp2Rh-9pN0BT68bBqbxtjcCh7SfkEPfo03dxzM5oSMt3tvuT89evXC4mD92m3FHm_Z6djV8TUzWZ4jwaC7QqOlPtThoJI2Y865AOxgYmnQ9sweRr1zgk_-4doXmMSZUtUFFuMn45BQ7A7g4MQnqdJMNyVwDap0Moyax9TMfMWCF3nNhbjVBHUbk" style=""/>
-</div>
-</div>
-</div>
-</div>
-</section>
-
 <!-- News Preview Section -->
 <section class="px-12 md:px-24 py-32 bg-surface-container-low">
 <div class="mb-20 flex flex-col md:flex-row justify-between items-baseline gap-4">
