@@ -101,23 +101,32 @@
 </div>
 <div class="flex items-center gap-6">
 <a class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform" href="shop.html" aria-label="Shop">shopping_bag</a>
-<button id="mobile-menu-button" class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform md:hidden" type="button" aria-label="Menu">
+<button id="mobile-menu-button" class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform md:hidden relative z-50" type="button" aria-label="Menu">
   menu
+</button>
 </button>
 </div>
 </div>
 <div class="bg-[#e8e8e8] dark:bg-neutral-900 h-[1px]"></div>
 </nav>
-        <!-- MOBILE MENU -->
-<div id="mobile-menu" class="hidden md:hidden bg-[#f9f9f9] dark:bg-black border-t border-[#e8e8e8] px-8 py-10">
-  <div class="flex flex-col gap-6">
+<!-- MOBILE MENU OVERLAY -->
+<div id="mobile-menu" class="fixed inset-0 z-40 hidden md:hidden bg-[#f9f9f9]/95 backdrop-blur-xl opacity-0 transition-opacity duration-500">
+  <div class="h-full flex flex-col justify-center px-10">
+    <nav class="flex flex-col gap-8">
+      <a href="index.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">Home</a>
+      <a href="about.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">About</a>
+      <a href="artists.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">Artists</a>
+      <a href="shop.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">Shop</a>
+      <a href="news.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">News</a>
+    </nav>
 
-    <a href="index.html" class="text-xs uppercase tracking-widest text-black dark:text-white">Home</a>
-    <a href="about.html" class="text-xs uppercase tracking-widest text-black dark:text-white">About</a>
-    <a href="artists.html" class="text-xs uppercase tracking-widest text-black dark:text-white">Artists</a>
-    <a href="shop.html" class="text-xs uppercase tracking-widest text-black dark:text-white">Shop</a>
-    <a href="news.html" class="text-xs uppercase tracking-widest text-black dark:text-white">News</a>
-
+    <div class="mt-16 pt-8 border-t border-black/10">
+      <p class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-500 leading-relaxed">
+        ON! Gallery<br>
+        Diezmo Viejo No. 5<br>
+        San Miguel de Allende
+      </p>
+    </div>
   </div>
 </div>
 <main class="pt-24">
@@ -212,14 +221,46 @@ CP 37700
 </div>
 </div>
 </footer>
-        <script>
+<script>
   const menuButton = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
+  const mobileLinks = document.querySelectorAll(".mobile-menu-link");
+
+  function openMenu() {
+    mobileMenu.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+
+    setTimeout(() => {
+      mobileMenu.classList.remove("opacity-0");
+      mobileMenu.classList.add("opacity-100");
+    }, 10);
+
+    menuButton.textContent = "close";
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.remove("opacity-100");
+    mobileMenu.classList.add("opacity-0");
+    document.body.classList.remove("overflow-hidden");
+
+    setTimeout(() => {
+      mobileMenu.classList.add("hidden");
+    }, 500);
+
+    menuButton.textContent = "menu";
+  }
 
   if (menuButton && mobileMenu) {
     menuButton.addEventListener("click", function () {
-      mobileMenu.classList.toggle("hidden");
-      menuButton.textContent = mobileMenu.classList.contains("hidden") ? "menu" : "close";
+      if (mobileMenu.classList.contains("hidden")) {
+        openMenu();
+      } else {
+        closeMenu();
+      }
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", closeMenu);
     });
   }
 </script>
