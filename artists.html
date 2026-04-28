@@ -104,11 +104,25 @@
 </div>
 <div class="flex items-center gap-6">
 <a class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform" href="shop.html" aria-label="Shop">shopping_bag</a>
-<button class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform md:hidden" type="button" aria-label="Menu">menu</button>
+<button id="mobile-menu-button" class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform md:hidden" type="button" aria-label="Menu">
+  menu
+</button>
 </div>
 </div>
 <div class="bg-[#e8e8e8] dark:bg-neutral-900 h-[1px]"></div>
 </nav>
+        <!-- MOBILE MENU -->
+<div id="mobile-menu" class="hidden md:hidden bg-[#f9f9f9] dark:bg-black border-t border-[#e8e8e8] px-8 py-10">
+  <div class="flex flex-col gap-6">
+
+    <a href="index.html" class="text-xs uppercase tracking-widest text-black dark:text-white">Home</a>
+    <a href="about.html" class="text-xs uppercase tracking-widest text-black dark:text-white">About</a>
+    <a href="artists.html" class="text-xs uppercase tracking-widest text-black dark:text-white">Artists</a>
+    <a href="shop.html" class="text-xs uppercase tracking-widest text-black dark:text-white">Shop</a>
+    <a href="news.html" class="text-xs uppercase tracking-widest text-black dark:text-white">News</a>
+
+  </div>
+</div>
 <main class="pt-40 pb-20">
 <!-- Page Header & Filter Section -->
 <section class="px-12 md:px-24 mb-24">
@@ -281,5 +295,15 @@ CP 37700
 </div>
 </div>
 </footer>
+<script>
+  const menuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
 
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
+      menuButton.textContent = mobileMenu.classList.contains("hidden") ? "menu" : "close";
+    });
+  }
+</script>
 <script src="script.js"></script></body></html>
