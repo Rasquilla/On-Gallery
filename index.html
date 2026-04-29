@@ -375,6 +375,54 @@ CP 37700
 </div>
 </footer>
 <script>
+  const exhibitions = [
+    {
+      title: "Antes de la Forma",
+      description: "Before an image becomes a recognizable figure, there is a moment of suspension.",
+      image: "URL-EXHIBICION-1"
+    },
+    {
+      title: "La Trama de lo Visible",
+      description: "An exploration of pictorial materiality through contemporary still life.",
+      image: "URL-EXHIBICION-2"
+    }
+  ];
+
+  let current = 0;
+
+  const imageEl = document.getElementById("exhibition-image");
+  const titleEl = document.getElementById("exhibition-title");
+  const descEl = document.getElementById("exhibition-description");
+
+  function updateExhibition(index) {
+    imageEl.style.opacity = 0;
+
+    setTimeout(() => {
+      imageEl.src = exhibitions[index].image;
+      titleEl.textContent = exhibitions[index].title;
+      descEl.textContent = exhibitions[index].description;
+
+      imageEl.style.opacity = 1;
+    }, 300);
+  }
+
+  document.getElementById("next-exhibition").onclick = () => {
+    current = (current + 1) % exhibitions.length;
+    updateExhibition(current);
+  };
+
+  document.getElementById("prev-exhibition").onclick = () => {
+    current = (current - 1 + exhibitions.length) % exhibitions.length;
+    updateExhibition(current);
+  };
+
+  // Auto play (opcional)
+  setInterval(() => {
+    current = (current + 1) % exhibitions.length;
+    updateExhibition(current);
+  }, 6000);
+</script>
+<script>
   const menuButton = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
   const mobileLinks = document.querySelectorAll(".mobile-menu-link");
