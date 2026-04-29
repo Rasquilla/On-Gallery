@@ -327,79 +327,87 @@ CP 37700
 
 <!-- Editorial Current Exhibitions Carousel -->
 <script>
-  const exhibitions = [
+    const exhibitions = [
     {
       title: "Antes de la Forma",
-      description: "Before an image becomes a recognizable figure, there is a moment of suspension.",
-      image: "image: "https://teterete.com/mx/wp-content/uploads/2026/04/exhibition_hero_2_1920x1080.jpg",
+      description: "Before an image becomes a recognizable figure, there is a moment of suspension. A threshold where form has not yet settled and perception remains open.",
+      image: "https://teterete.com/mx/wp-content/uploads/2026/04/exhibition_hero_2_1920x1080.jpg",
+      alt: "Antes de la Forma exhibition at ON! Gallery",
       link: "shop.html"
     },
     {
       title: "La Trama de lo Visible",
-      description: "In this exhibition, José Antonio Farrera explores pictorial materiality.",
+      description: "José Antonio Farrera extends his investigation into pictorial materiality through the floral still life, where image, surface and gesture become a field of perception.",
       image: "https://teterete.com/mx/wp-content/uploads/2026/04/exhibition_hero_1920x1080.jpg",
-      link: "shop.html"
+      alt: "La Trama de lo Visible exhibition at ON! Gallery",
+      link: "news.html"
     }
   ];
 
-  let current = 0;
+  let currentExhibitionIndex = 0;
+  const exhibitionImage = document.getElementById("exhibition-image");
+  const exhibitionTitle = document.getElementById("exhibition-title");
+  const exhibitionDescription = document.getElementById("exhibition-description");
+  const exhibitionCounter = document.getElementById("exhibition-counter");
+  const exhibitionLink = document.getElementById("exhibition-link");
+  const exhibitionDots = document.querySelectorAll(".exhibition-dot");
+  const prevExhibitionButton = document.getElementById("prev-exhibition");
+  const nextExhibitionButton = document.getElementById("next-exhibition");
 
-  const imageEl = document.getElementById("exhibition-image");
-  const titleEl = document.getElementById("exhibition-title");
-  const descEl = document.getElementById("exhibition-description");
-  const linkEl = document.getElementById("exhibition-link");
-  const counterEl = document.getElementById("exhibition-counter");
-  const dots = document.querySelectorAll(".exhibition-dot");
+  function setExhibition(index) {
+    if (!exhibitionImage || !exhibitionTitle || !exhibitionDescription) return;
 
-  // PRELOAD imágenes
-  exhibitions.forEach(e => {
-    const img = new Image();
-    img.src = e.image;
-  });
+    const exhibition = exhibitions[index];
+    const preloadedImage = new Image();
 
-  function updateHero(index) {
+    preloadedImage.onload = function () {
+      exhibitionImage.classList.add("opacity-0", "scale-[1.015]");
+      exhibitionTitle.classList.add("opacity-0");
+      exhibitionDescription.classList.add("opacity-0");
 
-    // fade out
-    imageEl.style.opacity = 0;
-    titleEl.style.opacity = 0;
-    descEl.style.opacity = 0;
+      setTimeout(function () {
+        exhibitionImage.src = exhibition.image;
+        exhibitionImage.alt = exhibition.alt;
+        exhibitionTitle.textContent = exhibition.title;
+        exhibitionDescription.textContent = exhibition.description;
+        if (exhibitionLink) exhibitionLink.href = exhibition.link;
+        if (exhibitionCounter) exhibitionCounter.textContent = String(index + 1).padStart(2, "0") + " / " + String(exhibitions.length).padStart(2, "0");
 
-    setTimeout(() => {
-      imageEl.src = exhibitions[index].image;
-      titleEl.textContent = exhibitions[index].title;
-      descEl.textContent = exhibitions[index].description;
-      linkEl.href = exhibitions[index].link;
+        exhibitionDots.forEach(function (dot, dotIndex) {
+          dot.classList.toggle("opacity-100", dotIndex === index);
+          dot.classList.toggle("opacity-30", dotIndex !== index);
+        });
 
-      // counter
-      counterEl.textContent = `${String(index + 1).padStart(2, '0')} / ${String(exhibitions.length).padStart(2, '0')}`;
+        exhibitionImage.classList.remove("opacity-0", "scale-[1.015]");
+        exhibitionTitle.classList.remove("opacity-0");
+        exhibitionDescription.classList.remove("opacity-0");
+      }, 280);
+    };
 
-      // dots
-      dots.forEach((dot, i) => {
-        dot.style.opacity = i === index ? "1" : "0.3";
-      });
+    preloadedImage.onerror = function () {
+      console.warn("Exhibition image could not be loaded:", exhibition.image);
+    };
 
-      // fade in
-      imageEl.style.opacity = 1;
-      titleEl.style.opacity = 1;
-      descEl.style.opacity = 1;
-
-    }, 400);
+    preloadedImage.src = exhibition.image;
   }
 
-  document.getElementById("next-exhibition").onclick = () => {
-    current = (current + 1) % exhibitions.length;
-    updateHero(current);
-  };
+  function nextExhibition() {
+    currentExhibitionIndex = (currentExhibitionIndex + 1) % exhibitions.length;
+    setExhibition(currentExhibitionIndex);
+  }
 
-  document.getElementById("prev-exhibition").onclick = () => {
-    current = (current - 1 + exhibitions.length) % exhibitions.length;
-    updateHero(current);
-  };
+  function prevExhibition() {
+    currentExhibitionIndex = (currentExhibitionIndex - 1 + exhibitions.length) % exhibitions.length;
+    setExhibition(currentExhibitionIndex);
+  }
 
-  setInterval(() => {
-    current = (current + 1) % exhibitions.length;
-    updateHero(current);
-  }, 7000);
+  if (nextExhibitionButton && prevExhibitionButton) {
+    nextExhibitionButton.addEventListener("click", nextExhibition);
+    prevExhibitionButton.addEventListener("click", prevExhibition);
+    setInterval(nextExhibition, 7000);
+  }
+</script>
+
 </script>
 
 <script src="script.js"></script></body></html>
