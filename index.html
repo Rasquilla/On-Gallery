@@ -143,23 +143,54 @@
 </div>
 <main class="pt-24">
 <!-- Hero Section -->
-<section class="px-12 md:px-24 pt-16 pb-32">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
-<div class="md:col-span-8 order-2 md:order-1">
-<div class="relative aspect-[4/5] md:aspect-[16/9] w-full overflow-hidden bg-surface-container">
-<img class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" data-alt="Before an image becomes a
-recognizable figure, there is a moment of suspension. A threshold where form has not yet settled and perception remains open." src="https://teterete.com/mx/wp-content/uploads/2026/04/antes-de-la-forma-ongallery-may26.jpg"/>
-</div>
-</div>
-<div class="md:col-span-4 order-1 md:order-2 pb-12">
-<span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block" style="">Current Exhibition</span>
-<h1 class="font-headline text-6xl md:text-8xl font-extralight tracking-tighter leading-none mb-8" style="">Antes de la Forma</h1>
-<p class="font-body text-lg text-secondary leading-relaxed mb-12 max-w-sm" style="">
-                        Before an image becomes a recognizable figure, there is a moment of suspension. A threshold where form has not yet settled and perception remains open
-                    </p>
-<button class="bg-primary text-white px-10 py-5 font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-colors" data-link="shop.html" style="" type="button">
-                        Explore Exhibition
-                    </button>
+
+  <!-- IMAGE -->
+  <div class="md:col-span-8 order-2 md:order-1">
+    <div class="relative aspect-[4/5] md:aspect-[16/9] w-full overflow-hidden bg-surface-container">
+
+      <img id="exhibition-image"
+        class="w-full h-full object-cover grayscale-[0.2] transition-opacity duration-700"
+        src="URL-EXHIBICION-1"
+        alt="Exhibition Image" />
+
+    </div>
+  </div>
+
+  <!-- TEXT -->
+  <div class="md:col-span-4 order-1 md:order-2 pb-12">
+
+    <span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block">
+      Current Exhibitions
+    </span>
+
+    <h1 id="exhibition-title"
+      class="font-headline text-6xl md:text-8xl font-extralight tracking-tighter leading-none mb-8">
+      Antes de la Forma
+    </h1>
+
+    <p id="exhibition-description"
+      class="font-body text-lg text-secondary leading-relaxed mb-12 max-w-sm">
+      Before an image becomes a recognizable figure, there is a moment of suspension.
+    </p>
+
+    <!-- CONTROLS -->
+    <div class="flex gap-4 items-center">
+
+      <button id="prev-exhibition"
+        class="border border-black/20 px-4 py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">
+        Prev
+      </button>
+
+      <button id="next-exhibition"
+        class="border border-black/20 px-4 py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">
+        Next
+      </button>
+
+    </div>
+
+  </div>
+
 </div>
 </div>
 
@@ -208,7 +239,7 @@ ON! Gallery builds a curatorial platform for contemporary Mexican and internatio
 <!-- Curated Collections (Bento Grid) -->
 <section class="bg-surface-container-low py-40 px-12 md:px-24">
 <div class="mb-24 flex flex-col md:flex-row justify-between items-baseline gap-4">
-<h2 class="font-headline text-5xl tracking-tight" style="">Curated Exhibitions</h2>
+<h2 class="font-headline text-5xl tracking-tight" style="">Past Exhibitions</h2>
 <a class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-colors" href="artists.html" style="">View All Series</a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -283,7 +314,7 @@ ON! Gallery builds a curatorial platform for contemporary Mexican and internatio
 <!-- Newsletter / Contact (Minimalist) -->
 <section class="py-40 px-12 md:px-24 bg-surface-container-high">
 <div class="max-w-3xl">
-<h2 class="font-headline text-5xl mb-12" style="">Stay informed on new curations.</h2>
+<h2 class="font-headline text-5xl mb-12" style="">Stay informed on new curations</h2>
 <div class="flex flex-col md:flex-row gap-8">
 <div class="flex-grow">
 <label class="font-label text-[10px] uppercase tracking-widest text-outline block mb-2" style="">Email Address</label>
