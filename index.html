@@ -101,7 +101,7 @@
 <nav class="fixed top-0 w-full z-50 h-24 bg-[#f9f9f9]/80 backdrop-blur-xl dark:bg-black/80">
 <div class="flex justify-between items-center px-8 md:px-24 w-full h-full">
 <div class="flex items-center gap-8 md:gap-12">
-<a class="font-serif text-2xl font-light tracking-[0.2em] text-black dark:text-white" href="index.html"><img alt="On Gallery Logo" class="h-12 w-auto object-contain" src="https://teterete.com/mx/wp-content/uploads/2026/04/logo-ongallery-sin-texto.jpg"/></a>
+<a class="font-serif text-2xl font-light tracking-[0.2em] text-black dark:text-white" href="index.html"><img alt="On Gallery Logo" class="h-12 w-auto object-contain" src="https://teterete.com/mx/wp-content/uploads/2026/04/OnGallery-logo-1.png"/></a>
 <div class="hidden md:flex gap-8">
 <a class="text-black dark:text-white border-b border-black dark:border-white pb-1 font-sans uppercase tracking-widest text-xs transition-all duration-500" href="index.html">Home</a>
 <a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="about.html">About</a>
@@ -112,85 +112,53 @@
 </div>
 <div class="flex items-center gap-6">
 <a class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform" href="shop.html" aria-label="Shop">shopping_bag</a>
-<button id="mobile-menu-button" class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform md:hidden relative z-50" type="button" aria-label="Menu">
-  menu
-</button>
-  menu
-</button>
+<button class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform md:hidden" type="button" aria-label="Menu">menu</button>
+</div>
 </div>
 <div class="bg-[#e8e8e8] dark:bg-neutral-900 h-[1px]"></div>
 </nav>
-<!-- MOBILE MENU OVERLAY -->
-<div id="mobile-menu" class="fixed inset-0 z-40 hidden md:hidden bg-[#f9f9f9]/95 backdrop-blur-xl opacity-0 transition-opacity duration-500">
-  <div class="h-full flex flex-col justify-center px-10">
-    <nav class="flex flex-col gap-8">
-      <a href="index.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">Home</a>
-      <a href="about.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">About</a>
-      <a href="artists.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">Artists</a>
-      <a href="shop.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">Shop</a>
-      <a href="news.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">News</a>
-    </nav>
-
-    <div class="mt-16 pt-8 border-t border-black/10">
-      <p class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-500 leading-relaxed">
-        ON! Gallery<br>
-        Diezmo Viejo No. 5<br>
-        San Miguel de Allende
-      </p>
-    </div>
-  </div>
-</div>
-</div>
 <main class="pt-24">
 <!-- Hero Section -->
+<section class="px-12 md:px-24 pt-16 pb-32">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
 
-  <!-- IMAGE -->
-  <div class="md:col-span-8 order-2 md:order-1">
-    <div class="relative aspect-[4/5] md:aspect-[16/9] w-full overflow-hidden bg-surface-container">
+<!-- Editorial Exhibition Carousel Image -->
+<div class="md:col-span-8 order-2 md:order-1">
+<div class="relative aspect-[4/5] md:aspect-[16/9] w-full overflow-hidden bg-surface-container group">
+<img id="exhibition-image" class="w-full h-full object-cover grayscale-[0.12] contrast-105 brightness-95 transition-all duration-700 ease-out" alt="Antes de la Forma exhibition at ON! Gallery" src="https://teterete.com/mx/wp-content/uploads/2026/04/antes-de-la-forma-ongallery-may26.jpg" style="object-position:center;"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+<div class="absolute left-6 bottom-6 md:left-8 md:bottom-8 flex items-center gap-4 text-white">
+<span id="exhibition-counter" class="font-label text-[10px] uppercase tracking-[0.25em]">01 / 02</span>
+<div class="h-[1px] w-16 bg-white/50"></div>
+<span class="font-label text-[10px] uppercase tracking-[0.25em] text-white/70">Current Exhibitions</span>
+</div>
+</div>
+</div>
 
-      <img id="exhibition-image"
-        class="w-full h-full object-cover grayscale-[0.2] transition-opacity duration-700"
-        src="URL-EXHIBICION-1"
-        alt="Exhibition Image" />
-
-    </div>
-  </div>
-
-  <!-- TEXT -->
-  <div class="md:col-span-4 order-1 md:order-2 pb-12">
-
-    <span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block">
-      Current Exhibitions
-    </span>
-
-    <h1 id="exhibition-title"
-      class="font-headline text-6xl md:text-8xl font-extralight tracking-tighter leading-none mb-8">
-      Antes de la Forma
-    </h1>
-
-    <p id="exhibition-description"
-      class="font-body text-lg text-secondary leading-relaxed mb-12 max-w-sm">
-      Before an image becomes a recognizable figure, there is a moment of suspension.
-    </p>
-
-    <!-- CONTROLS -->
-    <div class="flex gap-4 items-center">
-
-      <button id="prev-exhibition"
-        class="border border-black/20 px-4 py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">
-        Prev
-      </button>
-
-      <button id="next-exhibition"
-        class="border border-black/20 px-4 py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">
-        Next
-      </button>
-
-    </div>
-
-  </div>
-
+<!-- Editorial Exhibition Carousel Text -->
+<div class="md:col-span-4 order-1 md:order-2 pb-12">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block">Current Exhibitions</span>
+<h1 id="exhibition-title" class="font-headline text-6xl md:text-8xl font-extralight tracking-tighter leading-none mb-8 transition-opacity duration-500">Antes de la Forma</h1>
+<p id="exhibition-description" class="font-body text-lg text-secondary leading-relaxed mb-10 max-w-sm transition-opacity duration-500">
+Before an image becomes a recognizable figure, there is a moment of suspension. A threshold where form has not yet settled and perception remains open.
+</p>
+<div class="flex flex-col gap-8">
+<a id="exhibition-link" class="bg-primary text-white px-10 py-5 font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-colors w-fit" href="shop.html">
+Explore Exhibition
+</a>
+<div class="flex items-center gap-4">
+<button id="prev-exhibition" class="w-11 h-11 border border-black/20 flex items-center justify-center hover:bg-black hover:text-white transition-all" type="button" aria-label="Previous exhibition">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+</button>
+<button id="next-exhibition" class="w-11 h-11 border border-black/20 flex items-center justify-center hover:bg-black hover:text-white transition-all" type="button" aria-label="Next exhibition">
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+<div class="flex gap-2 ml-2">
+<span class="exhibition-dot h-[2px] w-8 bg-black opacity-100 transition-opacity"></span>
+<span class="exhibition-dot h-[2px] w-8 bg-black opacity-30 transition-opacity"></span>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -200,7 +168,7 @@
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
 <div class="lg:col-span-5">
 <span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block">About ON! Gallery</span>
-<h2 class="font-headline text-5xl md:text-6xl font-light leading-tight mb-8">A contemporary art gallery rooted in San Miguel de Allende</h2>
+<h2 class="font-headline text-5xl md:text-6xl font-light leading-tight mb-8">A contemporary art gallery rooted in San Miguel de Allende.</h2>
 <p class="font-body text-lg text-secondary leading-relaxed mb-10 max-w-xl">
 ON! Gallery builds a curatorial platform for contemporary Mexican and international art, connecting artists, collectors and cultural audiences through exhibitions, advisory and meaningful encounters with painting, sculpture, photography, installation and digital media.
 </p>
@@ -229,7 +197,7 @@ ON! Gallery builds a curatorial platform for contemporary Mexican and internatio
 </div>
 </div>
 <div class="absolute -bottom-8 right-8 bg-primary text-white p-8 max-w-xs hidden md:block">
-<p class="font-headline text-3xl leading-tight mb-4">A living space for art, ideas and collectors</p>
+<p class="font-headline text-3xl leading-tight mb-4">A living space for art, ideas and collectors.</p>
 <span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/60">San Miguel de Allende</span>
 </div>
 </div>
@@ -239,7 +207,7 @@ ON! Gallery builds a curatorial platform for contemporary Mexican and internatio
 <!-- Curated Collections (Bento Grid) -->
 <section class="bg-surface-container-low py-40 px-12 md:px-24">
 <div class="mb-24 flex flex-col md:flex-row justify-between items-baseline gap-4">
-<h2 class="font-headline text-5xl tracking-tight" style="">Past Exhibitions</h2>
+<h2 class="font-headline text-5xl tracking-tight" style="">Curated Exhibitions</h2>
 <a class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-colors" href="artists.html" style="">View All Series</a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -314,35 +282,22 @@ ON! Gallery builds a curatorial platform for contemporary Mexican and internatio
 <!-- Newsletter / Contact (Minimalist) -->
 <section class="py-40 px-12 md:px-24 bg-surface-container-high">
 <div class="max-w-3xl">
-<h2 class="font-headline text-5xl mb-12" style="">Stay informed on new curations</h2>
+<h2 class="font-headline text-5xl mb-12" style="">Stay informed on new curations.</h2>
 <div class="flex flex-col md:flex-row gap-8">
 <div class="flex-grow">
 <label class="font-label text-[10px] uppercase tracking-widest text-outline block mb-2" style="">Email Address</label>
-<input class="w-full bg-transparent border-0 border-b border-outline py-4 font-label text-sm focus:ring-0 focus:border-primary placeholder:text-neutral-400" placeholder="ONGALLERY.SMA@GMAIL.COM" type="email"/>
+<input class="w-full bg-transparent border-0 border-b border-outline py-4 font-label text-sm focus:ring-0 focus:border-primary placeholder:text-neutral-400" placeholder="YOUR@EMAIL.COM" type="email"/>
 </div>
 <button class="bg-primary text-white px-12 py-4 font-label text-xs uppercase tracking-widest self-end" style="">Subscribe</button>
 </div>
 </div>
 </section>
 </main>
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/525518084505?text=Hello%20ON!%20Gallery,%20I%20would%20like%20to%20request%20information."
-   target="_blank"
-   rel="noopener"
-   aria-label="Contact ON! Gallery via WhatsApp"
-   class="fixed bottom-6 right-6 z-50 bg-black text-white w-14 h-14 flex items-center justify-center rounded-full shadow-xl hover:scale-105 hover:bg-neutral-800 transition-all duration-300">
-  <span class="font-label text-[10px] uppercase tracking-[0.18em]">WA</span>
-</a>
-
-<script src="script.js"></script>
-</body>
-</html>
-    </div>
 <!-- Footer Component -->
 <footer class="w-full py-20 px-12 md:px-24 mt-40 bg-[#f3f3f3] dark:bg-neutral-950 border-t border-black/5 dark:border-white/5">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
 <div class="md:col-span-4 flex flex-col gap-8">
-<div class="font-serif italic text-xl dark:text-white">CONTACT ON! Gallery</div>
+<div class="font-serif italic text-xl dark:text-white">ON! Gallery</div>
 <p class="font-mono text-[10px] uppercase tracking-[0.15em] dark:text-neutral-400 max-w-xs leading-relaxed">
 © 2026 ON! Gallery. Contemporary art, curatorial practice and collecting in San Miguel de Allende.
 </p>
@@ -366,103 +321,94 @@ CP 37700
 <div class="md:col-span-3 flex flex-col gap-4">
 <span class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2">Contact</span>
 <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="tel:+524150000000">+52 5518084505</a>
-<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="mailto:hello@ongallery.art">ongallery.sma@gmail.com</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="mailto:hello@ongallery.art">hello@ongallery.art</a>
 <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="https://www.instagram.com/on.gallery.art/" target="_blank" rel="noopener">Instagram @on.gallery.art</a>
 <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="https://www.facebook.com/ongallery" target="_blank" rel="noopener">Facebook ON Gallery</a>
 </div>
-  </div>
-</section>
 </div>
 </footer>
+
+<!-- Editorial Current Exhibitions Carousel -->
 <script>
   const exhibitions = [
     {
       title: "Antes de la Forma",
-      description: "Before an image becomes a recognizable figure, there is a moment of suspension.",
-      image: "https://teterete.com/mx/wp-content/uploads/2026/04/antes-de-la-forma-ongallery-may26.jpg"
+      description: "Before an image becomes a recognizable figure, there is a moment of suspension. A threshold where form has not yet settled and perception remains open.",
+      image: "https://teterete.com/mx/wp-content/uploads/2026/04/antes-de-la-forma-ongallery-may26.jpg",
+      alt: "Antes de la Forma exhibition at ON! Gallery",
+      link: "shop.html"
     },
     {
       title: "La Trama de lo Visible",
-      description: "An exploration of pictorial materiality through contemporary still life.",
-      image: "https://teterete.com/mx/wp-content/uploads/2026/04/exhibition_hero_1920x1080.jpg"
+      description: "José Antonio Farrera extends his investigation into pictorial materiality through the floral still life, where image, surface and gesture become a field of perception.",
+      image: "exhibition_hero_1920x1080.jpg",
+      alt: "La Trama de lo Visible exhibition at ON! Gallery",
+      link: "news.html"
     }
   ];
 
-  let current = 0;
+  let currentExhibitionIndex = 0;
+  const exhibitionImage = document.getElementById("exhibition-image");
+  const exhibitionTitle = document.getElementById("exhibition-title");
+  const exhibitionDescription = document.getElementById("exhibition-description");
+  const exhibitionCounter = document.getElementById("exhibition-counter");
+  const exhibitionLink = document.getElementById("exhibition-link");
+  const exhibitionDots = document.querySelectorAll(".exhibition-dot");
+  const prevExhibitionButton = document.getElementById("prev-exhibition");
+  const nextExhibitionButton = document.getElementById("next-exhibition");
 
-  const imageEl = document.getElementById("exhibition-image");
-  const titleEl = document.getElementById("exhibition-title");
-  const descEl = document.getElementById("exhibition-description");
+  function setExhibition(index) {
+    if (!exhibitionImage || !exhibitionTitle || !exhibitionDescription) return;
 
-  function updateExhibition(index) {
-    imageEl.style.opacity = 0;
+    const exhibition = exhibitions[index];
+    const preloadedImage = new Image();
 
-    setTimeout(() => {
-      imageEl.src = exhibitions[index].image;
-      titleEl.textContent = exhibitions[index].title;
-      descEl.textContent = exhibitions[index].description;
+    preloadedImage.onload = function () {
+      exhibitionImage.classList.add("opacity-0", "scale-[1.015]");
+      exhibitionTitle.classList.add("opacity-0");
+      exhibitionDescription.classList.add("opacity-0");
 
-      imageEl.style.opacity = 1;
-    }, 300);
+      setTimeout(function () {
+        exhibitionImage.src = exhibition.image;
+        exhibitionImage.alt = exhibition.alt;
+        exhibitionTitle.textContent = exhibition.title;
+        exhibitionDescription.textContent = exhibition.description;
+        if (exhibitionLink) exhibitionLink.href = exhibition.link;
+        if (exhibitionCounter) exhibitionCounter.textContent = String(index + 1).padStart(2, "0") + " / " + String(exhibitions.length).padStart(2, "0");
+
+        exhibitionDots.forEach(function (dot, dotIndex) {
+          dot.classList.toggle("opacity-100", dotIndex === index);
+          dot.classList.toggle("opacity-30", dotIndex !== index);
+        });
+
+        exhibitionImage.classList.remove("opacity-0", "scale-[1.015]");
+        exhibitionTitle.classList.remove("opacity-0");
+        exhibitionDescription.classList.remove("opacity-0");
+      }, 280);
+    };
+
+    preloadedImage.onerror = function () {
+      console.warn("Exhibition image could not be loaded:", exhibition.image);
+    };
+
+    preloadedImage.src = exhibition.image;
   }
 
-  document.getElementById("next-exhibition").onclick = () => {
-    current = (current + 1) % exhibitions.length;
-    updateExhibition(current);
-  };
-
-  document.getElementById("prev-exhibition").onclick = () => {
-    current = (current - 1 + exhibitions.length) % exhibitions.length;
-    updateExhibition(current);
-  };
-
-  // Auto play (opcional)
-  setInterval(() => {
-    current = (current + 1) % exhibitions.length;
-    updateExhibition(current);
-  }, 6000);
-</script>
-<script>
-  const menuButton = document.getElementById("mobile-menu-button");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const mobileLinks = document.querySelectorAll(".mobile-menu-link");
-
-  function openMenu() {
-    mobileMenu.classList.remove("hidden");
-    document.body.classList.add("overflow-hidden");
-
-    setTimeout(() => {
-      mobileMenu.classList.remove("opacity-0");
-      mobileMenu.classList.add("opacity-100");
-    }, 10);
-
-    menuButton.textContent = "close";
+  function nextExhibition() {
+    currentExhibitionIndex = (currentExhibitionIndex + 1) % exhibitions.length;
+    setExhibition(currentExhibitionIndex);
   }
 
-  function closeMenu() {
-    mobileMenu.classList.remove("opacity-100");
-    mobileMenu.classList.add("opacity-0");
-    document.body.classList.remove("overflow-hidden");
-
-    setTimeout(() => {
-      mobileMenu.classList.add("hidden");
-    }, 500);
-
-    menuButton.textContent = "menu";
+  function prevExhibition() {
+    currentExhibitionIndex = (currentExhibitionIndex - 1 + exhibitions.length) % exhibitions.length;
+    setExhibition(currentExhibitionIndex);
   }
 
-  if (menuButton && mobileMenu) {
-    menuButton.addEventListener("click", function () {
-      if (mobileMenu.classList.contains("hidden")) {
-        openMenu();
-      } else {
-        closeMenu();
-      }
-    });
-
-    mobileLinks.forEach(link => {
-      link.addEventListener("click", closeMenu);
-    });
+  if (nextExhibitionButton && prevExhibitionButton) {
+    nextExhibitionButton.addEventListener("click", nextExhibition);
+    prevExhibitionButton.addEventListener("click", prevExhibition);
+    setInterval(nextExhibition, 7000);
   }
 </script>
+
 <script src="script.js"></script></body></html>
