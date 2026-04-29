@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "outline": "#7e7576",
+        "primary": "#000000",
+        "secondary": "#5e5e5e",
+        "background": "#f9f9f9",
+        "surface": "#f9f9f9",
+        "surface-container": "#eeeeee",
+        "surface-container-low": "#f3f3f3",
+        "surface-container-high": "#e8e8e8",
+        "outline-variant": "#cfc4c5",
+        "on-surface": "#1a1c1c"
+      },
+      fontFamily: {
+        "headline": ["Newsreader", "serif"],
+        "body": ["Inter", "sans-serif"],
+        "label": ["Space Grotesk", "monospace"]
+      }
+    }
+  }
+}
+</script>
+<style>
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+body {
+  background-color: #f9f9f9;
+}
+</style>
+<meta name="description" content="A curatorial journal article from ON! Gallery exploring Antes de la Forma, perception, materiality and the moment before an image becomes recognizable."/>
+<title>Antes de la Forma: The Threshold Before Image | ON! Gallery Journal</title>
+</head>
+
+<body class="font-body text-on-surface selection:bg-primary selection:text-white">
+
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 h-24 bg-[#f9f9f9]/80 backdrop-blur-xl dark:bg-black/80">
+  <div class="flex justify-between items-center px-8 md:px-24 w-full h-full">
+    <div class="flex items-center gap-8 md:gap-12">
+      <a class="font-serif text-2xl font-light tracking-[0.2em] text-black dark:text-white" href="index.html">
+        <img alt="On Gallery Logo" class="h-12 w-auto object-contain" src="https://teterete.com/mx/wp-content/uploads/2026/04/logo-ongallery-sin-texto.jpg"/>
+      </a>
+      <div class="hidden md:flex gap-8">
+        <a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="index.html">Home</a>
+        <a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="about.html">About</a>
+        <a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="artists.html">Artists</a>
+        <a class="text-neutral-400 dark:text-neutral-600 font-sans uppercase tracking-widest text-xs hover:text-black dark:hover:text-white transition-all duration-500" href="shop.html">Shop</a>
+        <a class="text-black dark:text-white border-b border-black dark:border-white pb-1 font-sans uppercase tracking-widest text-xs transition-all duration-500" href="news.html">News</a>
+      </div>
+    </div>
+    <div class="flex items-center gap-6">
+      <a class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform" href="shop.html" aria-label="Shop">shopping_bag</a>
+      <button id="mobile-menu-button" class="material-symbols-outlined text-black dark:text-white cursor-pointer scale-100 active:scale-95 transition-transform md:hidden relative z-50" type="button" aria-label="Menu">menu</button>
+    </div>
+  </div>
+  <div class="bg-[#e8e8e8] dark:bg-neutral-900 h-[1px]"></div>
+</nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div id="mobile-menu" class="fixed inset-0 z-40 hidden md:hidden bg-[#f9f9f9]/95 backdrop-blur-xl opacity-0 transition-opacity duration-500">
+  <div class="h-full flex flex-col justify-center px-10">
+    <nav class="flex flex-col gap-8">
+      <a href="index.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">Home</a>
+      <a href="about.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">About</a>
+      <a href="artists.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">Artists</a>
+      <a href="shop.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">Shop</a>
+      <a href="news.html" class="mobile-menu-link font-headline text-5xl text-black hover:italic transition-all">News</a>
+    </nav>
+    <div class="mt-16 pt-8 border-t border-black/10">
+      <p class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-500 leading-relaxed">
+        ON! Gallery<br>
+        Diezmo Viejo No. 5<br>
+        San Miguel de Allende
+      </p>
+    </div>
+  </div>
+</div>
+
+<main class="pt-24">
+
+<!-- Article Hero -->
+<section class="px-12 md:px-24 pt-24 pb-20">
+  <div class="max-w-5xl">
+    <a href="news.html" class="font-label text-[10px] uppercase tracking-[0.2em] text-outline border-b border-outline pb-1 hover:text-black hover:border-black transition-all">
+      Back to News & Journal
+    </a>
+
+    <div class="mt-16">
+      <span class="font-label text-xs uppercase tracking-[0.3em] text-outline mb-6 block">
+        Journal · Exhibition Notes · May 2026
+      </span>
+
+      <h1 class="font-headline text-6xl md:text-8xl font-extralight tracking-tighter leading-none mb-10">
+        Antes de la Forma: The Threshold Before Image
+      </h1>
+
+      <p class="font-body text-xl md:text-2xl text-secondary leading-relaxed max-w-3xl">
+        A curatorial reflection on perception, silence and the moment before an image becomes recognizable.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Image -->
+<section class="px-12 md:px-24 pb-28">
+  <div class="overflow-hidden bg-surface-container">
+    <img class="w-full aspect-[16/9] object-cover grayscale-[0.08] contrast-105 brightness-95"
+         src="exhibition_hero_2_1920x1080.jpg"
+         alt="Antes de la Forma exhibition artwork at ON! Gallery"/>
+  </div>
+</section>
+
+<!-- Article Body -->
+<section class="px-12 md:px-24 pb-40">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+    <aside class="lg:col-span-3">
+      <div class="sticky top-36 border-t border-outline-variant pt-8">
+        <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline block mb-6">Article Details</span>
+        <div class="space-y-6 font-label text-[10px] uppercase tracking-[0.15em] text-secondary">
+          <p><span class="block text-outline mb-1">Category</span> Journal</p>
+          <p><span class="block text-outline mb-1">Topic</span> Current Exhibition</p>
+          <p><span class="block text-outline mb-1">Location</span> San Miguel de Allende</p>
+          <p><span class="block text-outline mb-1">Reading Time</span> 4 min</p>
+        </div>
+      </div>
+    </aside>
+
+    <article class="lg:col-span-7">
+      <div class="prose prose-neutral max-w-none">
+        <p class="font-body text-lg leading-relaxed text-on-surface mb-8">
+          Before an image becomes a recognizable figure, there is a moment of suspension. A threshold where form has not yet settled and perception remains open. <em>Antes de la Forma</em> begins precisely in that unstable interval: the instant before certainty, before narrative, before the eye decides what it is seeing.
+        </p>
+
+        <p class="font-body text-lg leading-relaxed text-secondary mb-8">
+          The exhibition gathers works that appear to resist immediate definition. Surfaces, textures and gestures operate as fragments of a visual language that is still forming. Rather than presenting the artwork as a fixed answer, the exhibition proposes an experience of looking as a slow act of construction.
+        </p>
+
+        <blockquote class="border-l border-black pl-8 my-14">
+          <p class="font-headline text-3xl italic leading-tight">
+            “The work does not ask to be solved. It asks to be approached, observed and inhabited.”
+          </p>
+        </blockquote>
+
+        <p class="font-body text-lg leading-relaxed text-secondary mb-8">
+          At ON! Gallery, this exhibition becomes a meditation on how contemporary art creates meaning through ambiguity. The pieces invite the viewer to remain inside the question, to engage with material presence before translating it into symbol or image.
+        </p>
+
+        <p class="font-body text-lg leading-relaxed text-secondary mb-8">
+          In the context of San Miguel de Allende, where history, architecture and contemporary practice constantly intersect, <em>Antes de la Forma</em> positions the gallery as a space for critical intimacy. Each work opens a dialogue between memory and perception, between what is visible and what has not yet arrived.
+        </p>
+
+        <p class="font-body text-lg leading-relaxed text-secondary">
+          The exhibition is also an invitation to collectors to think beyond acquisition as possession. To collect contemporary art is to preserve a moment of inquiry, to support an artist’s evolving language and to participate in the cultural conversations that shape the present.
+        </p>
+      </div>
+
+      <div class="mt-20 pt-10 border-t border-outline-variant flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
+        <div>
+          <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline block mb-2">Current Exhibition</span>
+          <p class="font-headline text-3xl">Antes de la Forma</p>
+        </div>
+        <a href="shop.html" class="bg-primary text-white px-10 py-5 font-label text-xs uppercase tracking-widest hover:bg-neutral-800 transition-colors text-center">
+          Explore Exhibition
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Related Articles -->
+<section class="px-12 md:px-24 py-32 bg-surface-container-low">
+  <div class="mb-16 flex flex-col md:flex-row justify-between items-baseline gap-4">
+    <h2 class="font-headline text-5xl tracking-tight">Related Notes</h2>
+    <a href="news.html" class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-outline transition-colors">View Journal</a>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <article class="border-t border-outline-variant pt-8">
+      <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Press · February 2026</span>
+      <h3 class="font-headline text-3xl mt-6 mb-4">The Show That Opens ON! Gallery</h3>
+      <p class="font-body text-sm text-secondary leading-relaxed">External press coverage on ON! Gallery and its first exhibition in San Miguel de Allende.</p>
+    </article>
+
+    <article class="border-t border-outline-variant pt-8">
+      <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Collectors · March 2026</span>
+      <h3 class="font-headline text-3xl mt-6 mb-4">An Autonomous Pulse</h3>
+      <p class="font-body text-sm text-secondary leading-relaxed">A note on the gallery’s role within San Miguel’s contemporary art landscape.</p>
+    </article>
+
+    <article class="border-t border-outline-variant pt-8">
+      <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Events · By Appointment</span>
+      <h3 class="font-headline text-3xl mt-6 mb-4">Private Viewing Program</h3>
+      <p class="font-body text-sm text-secondary leading-relaxed">Private visits and collector advisory sessions for current and upcoming exhibitions.</p>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer Component -->
+<footer class="w-full py-20 px-12 md:px-24 mt-40 bg-[#f3f3f3] dark:bg-neutral-950 border-t border-black/5 dark:border-white/5">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+    <div class="md:col-span-4 flex flex-col gap-8">
+      <div class="font-serif italic text-xl dark:text-white">ON! Gallery</div>
+      <p class="font-mono text-[10px] uppercase tracking-[0.15em] dark:text-neutral-400 max-w-xs leading-relaxed">
+        © 2026 ON! Gallery. Contemporary art, curatorial practice and collecting in San Miguel de Allende.
+      </p>
+    </div>
+    <div class="md:col-span-3 flex flex-col gap-4">
+      <span class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2">Visit</span>
+      <p class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 leading-relaxed">
+        Diezmo Viejo No. 5<br/>
+        Zona Centro<br/>
+        San Miguel de Allende, Guanajuato<br/>
+        CP 37700
+      </p>
+    </div>
+    <div class="md:col-span-2 flex flex-col gap-4">
+      <span class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2">Navigation</span>
+      <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="about.html">About</a>
+      <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="artists.html">Artists</a>
+      <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="shop.html">Shop</a>
+      <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="news.html">News</a>
+    </div>
+    <div class="md:col-span-3 flex flex-col gap-4">
+      <span class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2">Contact</span>
+      <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="tel:+525518084505">+52 5518084505</a>
+      <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="mailto:ONGALLERY.SMA@GMAIL.COM">ONGALLERY.SMA@GMAIL.COM</a>
+      <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="https://www.instagram.com/on.gallery.art/" target="_blank" rel="noopener">Instagram @on.gallery.art</a>
+      <a class="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-700 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-70 hover:opacity-100 duration-300" href="https://www.facebook.com/ongallery" target="_blank" rel="noopener">Facebook ON Gallery</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/525518084505?text=Hello%20ON!%20Gallery,%20I%20would%20like%20to%20request%20information."
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact ON! Gallery via WhatsApp"
+   class="fixed bottom-6 right-6 z-50 bg-black text-white w-14 h-14 flex items-center justify-center rounded-full shadow-xl hover:scale-105 hover:bg-neutral-800 transition-all duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 fill-white">
+    <path d="M19.11 17.28c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.28-.7.91-.86 1.1-.16.18-.32.21-.6.07-.28-.14-1.17-.43-2.23-1.38-.82-.73-1.37-1.64-1.53-1.91-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47l-.52-.01c-.18 0-.48.07-.73.34-.25.28-.95.93-.95 2.27s.98 2.64 1.11 2.82c.14.18 1.92 2.93 4.65 4.1.65.28 1.15.45 1.54.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/>
+    <path d="M16.02 3C9.38 3 4 8.37 4 15c0 2.64.85 5.08 2.3 7.06L4 29l7.13-2.27C13.05 27.57 14.5 28 16.02 28c6.63 0 12.02-5.37 12.02-12S22.65 3 16.02 3zm0 22c-1.43 0-2.82-.38-4.04-1.1l-.29-.17-4.23 1.34 1.38-4.12-.19-.3A9.94 9.94 0 0 1 6 15c0-5.52 4.5-10 10.02-10S26.04 9.48 26.04 15s-4.5 10-10.02 10z"/>
+  </svg>
+</a>
+
+<script>
+  const menuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileLinks = document.querySelectorAll(".mobile-menu-link");
+
+  function openMenu() {
+    mobileMenu.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+    setTimeout(() => {
+      mobileMenu.classList.remove("opacity-0");
+      mobileMenu.classList.add("opacity-100");
+    }, 10);
+    menuButton.textContent = "close";
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.remove("opacity-100");
+    mobileMenu.classList.add("opacity-0");
+    document.body.classList.remove("overflow-hidden");
+    setTimeout(() => {
+      mobileMenu.classList.add("hidden");
+    }, 500);
+    menuButton.textContent = "menu";
+  }
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener("click", function () {
+      if (mobileMenu.classList.contains("hidden")) {
+        openMenu();
+      } else {
+        closeMenu();
+      }
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
+  }
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
