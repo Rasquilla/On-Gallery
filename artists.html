@@ -446,6 +446,43 @@ CP 37700
 </a>
 
 <script src="script.js"></script>
+        <script>
+  // Artist search
+  const searchInput = document.getElementById("artist-search");
+  const artistCards = document.querySelectorAll(".artist-card");
+
+  if (searchInput && artistCards.length) {
+    searchInput.addEventListener("input", function () {
+      const searchValue = this.value.toLowerCase();
+
+      artistCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+
+        if (text.includes(searchValue)) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  }
+
+  // Load archive
+  const loadArchiveButton = document.getElementById("load-archive");
+  const archiveArtists = document.querySelectorAll(".archive-artist");
+
+  if (loadArchiveButton && archiveArtists.length) {
+    loadArchiveButton.addEventListener("click", function () {
+      archiveArtists.forEach(card => {
+        card.classList.remove("hidden");
+      });
+
+      loadArchiveButton.textContent = "Archive Loaded";
+      loadArchiveButton.disabled = true;
+      loadArchiveButton.classList.add("opacity-40", "cursor-not-allowed");
+    });
+  }
+</script>
 </body>
 </html>
 <script>
