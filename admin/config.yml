@@ -1,1 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
 
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "news"
+    label: "News & Journal"
+    folder: "content/news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "select", options: ["Exhibition", "Press", "Events", "Journal", "Collectors"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "exhibitions"
+    label: "Current Exhibitions"
+    folder: "content/exhibitions"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Exhibition Title", name: "title", widget: "string" }
+      - { label: "Artist / Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "string", required: false }
+      - { label: "Hero Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Link", name: "link", widget: "string", default: "shop.html" }
